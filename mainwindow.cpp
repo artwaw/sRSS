@@ -21,10 +21,94 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    if (!settings.allKeys().contains("dbfile")||(!QFile::exists(settings.value("dbfile").toString()))) {
+        zeroconf();
+    }
+    loadSettings();
+    connect(ui->action_Quit,&QAction::triggered,this,&MainWindow::closeApp);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::fail(const qint32 excode, const QString reason, const QString msg) {
+    QMessageBox::critical(this,reason,msg);
+    exit(excode);
+}
+
+void MainWindow::criticalMsg(const QString reason, const QString msg) {
+    QMessageBox::critical(this,reason,msg);
+}
+
+bool MainWindow::initDB() {
+    auto db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName(settings.value("dbfile").toString());
+    return db.open();
+}
+
+void MainWindow::zeroconf() {
+    QDir path(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)+"sRSS/");
+    if (!path.exists()) {
+        path.mkpath(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)+"sRSS/");
+    }
+    settings.setValue("dbfile",QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)+"sRSS/sRSS.srss");
+    settings.setValue("cache",QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation));
+    settings.setValue("envelopes",true);
+    settings.setValue("downloads",QStandardPaths::writableLocation(QStandardPaths::DownloadLocation));
+    settings.setValue("askdownload",false);
+    settings.setValue("autocheck",true);
+    settings.setValue("autointerval",15);
+    settings.setValue("honor",true);
+    settings.sync();
+    if (!initDB()) {
+        criticalMsg(tr("Error opening file"),tr("There was an error creating data file using default filename and path. Please go to settings and verify the data file location."));
+        return;
+    }
+    QSqlQuery query("create table sIndex(id integer primary key, rgroup integer, rtable text, title text, link text, description text, lang text, copyright text, manedit text, webmaster text, pubdate text, lastbuild text, category text, generator text, docs text, ttl integer, imgurl text, imgwidth integer, imgheight integer, skiphrs text, skipdays text);");
+    query.exec();
+    if (query.lastError().type()!=QSqlError::NoError) {
+        fail(1,tr("Error while data file init"),tr("Something went wrong while preparing the data file. Please forward the below info to srss@trollnet.com.pl:")+query.lastError().text());
+    }
+    query.exec("create table sGroups(id integer primary key, rgroup text);");
+    if (query.lastError().type()!=QSqlError::NoError) {
+        fail(1,tr("Error while data file init"),tr("Something went wrong while preparing the data file. Please forward the below info to srss@trollnet.com.pl:")+query.lastError().text());
+    }
+    query.exec("insert into sGroups(rgroup) values('-');");
+    if (query.lastError().type()!=QSqlError::NoError) {
+        fail(1,tr("Error while data file init"),tr("Something went wrong while preparing the data file. Please forward the below info to srss@trollnet.com.pl:")+query.lastError().text());
+    }
+}
+
+void MainWindow::loadSettings() {
+    move(settings.value("posX").toInt(),settings.value("posY").toInt());
+    resize(settings.value("width").toInt(),settings.value("height").toInt());
+}
+
+void MainWindow::saveSettings() {
+    settings.setValue("width",width());
+    settings.setValue("height",height());
+    settings.setValue("posX",x());
+    settings.setValue("posY",y());
+    settings.sync();
+}
+
+void MainWindow::closeEvent(QCloseEvent *event) {
+    auto db = QSqlDatabase::database();
+    db.close();
+    saveSettings();
+    event->accept();
+}
+
+void MainWindow::closeApp() {
+    exit(0);
+}
+
+void MainWindow::clearCache() {
+    QDir root(settings.value("cache").toString());
+    if (QMessageBox::question(this,tr("Doublecheck needed"),tr("Are you sure you want to remove all cached items?"),QMessageBox::Yes|QMessageBox::No)==QMessageBox::Yes) {
+        root.removeRecursively();
+    }
 }
 

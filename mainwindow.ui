@@ -11,11 +11,293 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Small RSS</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/gfx/rss-feed.png</normalon>
+   </iconset>
   </property>
   <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProgram">
+    <property name="title">
+     <string>Program</string>
+    </property>
+    <addaction name="action_preferences"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menuChannels">
+    <property name="title">
+     <string>Channels</string>
+    </property>
+    <addaction name="action_Add"/>
+    <addaction name="action_Edit_channel"/>
+    <addaction name="action_Remove"/>
+    <addaction name="separator"/>
+    <addaction name="actionR_efresh_all"/>
+    <addaction name="actionRefresh_selected"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_Index"/>
+    <addaction name="separator"/>
+    <addaction name="actionCopyright_info"/>
+    <addaction name="separator"/>
+    <addaction name="action_About"/>
+   </widget>
+   <widget class="QMenu" name="menuEntries">
+    <property name="title">
+     <string>Entries</string>
+    </property>
+    <addaction name="action_Un_mark_as_favourite"/>
+    <addaction name="separator"/>
+    <addaction name="actionRemo_ve_entry"/>
+    <addaction name="separator"/>
+    <addaction name="action_Save_entry_as_PDF"/>
+    <addaction name="actionPrin_t_entry"/>
+   </widget>
+   <addaction name="menuProgram"/>
+   <addaction name="menuChannels"/>
+   <addaction name="menuEntries"/>
+   <addaction name="menuHelp"/>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Quit">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/button-power-2.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Exits the program</string>
+   </property>
+   <property name="shortcut">
+    <string>F10</string>
+   </property>
+  </action>
+  <action name="action_preferences">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/cog-double-2.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Preferences...</string>
+   </property>
+   <property name="toolTip">
+    <string>Displays dialog with config options</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="action_Add">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/cloud-add.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Add...</string>
+   </property>
+   <property name="toolTip">
+    <string>Adds new RSS channel to the program</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="action_Edit_channel">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/cloud-setting.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Edit...</string>
+   </property>
+   <property name="toolTip">
+    <string>Allows to edit channel parameters</string>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+  </action>
+  <action name="action_Remove">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/cloud-remove.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Remove</string>
+   </property>
+   <property name="toolTip">
+    <string>Removes channel from list. All entries will be lost!</string>
+   </property>
+   <property name="shortcut">
+    <string>F7</string>
+   </property>
+  </action>
+  <action name="actionR_efresh_all">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/cloud-refresh.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>R&amp;efresh all</string>
+   </property>
+   <property name="toolTip">
+    <string>Pools all channels for new entries</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionRefresh_selected">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/cloud-sync.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Refresh &amp;selected</string>
+   </property>
+   <property name="toolTip">
+    <string>Polls selected channel for new entries</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+R</string>
+   </property>
+  </action>
+  <action name="action_Un_mark_as_favourite">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/book-favorite-1.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>(Un)mark as favourite</string>
+   </property>
+   <property name="toolTip">
+    <string>Marks/unmarsk entry</string>
+   </property>
+   <property name="shortcut">
+    <string>*</string>
+   </property>
+  </action>
+  <action name="actionRemo_ve_entry">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/remove-2.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Remo&amp;ve entry</string>
+   </property>
+   <property name="toolTip">
+    <string>Removes manually selected entry</string>
+   </property>
+   <property name="shortcut">
+    <string>-</string>
+   </property>
+  </action>
+  <action name="action_Save_entry_as_PDF">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/file-pdf.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save entry as PDF...</string>
+   </property>
+   <property name="toolTip">
+    <string>Saves entry as PDF file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionPrin_t_entry">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/print-text.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Prin&amp;t entry...</string>
+   </property>
+   <property name="toolTip">
+    <string>Prints entry</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_Index">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/help-circle.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Index...</string>
+   </property>
+   <property name="toolTip">
+    <string>Displays help system</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/infomation-circle.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About...</string>
+   </property>
+   <property name="toolTip">
+    <string>Displays general info about the program</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionCopyright_info">
+   <property name="icon">
+    <iconset>
+     <normalon>:/gfx/file-copyright.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Copyright info</string>
+   </property>
+   <property name="toolTip">
+    <string>All acknowledgements and license info</string>
+   </property>
+   <property name="shortcut">
+    <string>F12</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

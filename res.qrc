@@ -1,4 +1,33 @@
 <RCC>
     <qresource prefix="/lang"/>
-    <qresource prefix="/gfx"/>
+    <qresource prefix="/sql">
+        <file>itemschema.sql</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>gfx/cog-double-2.png</file>
+        <file>gfx/folder-2.png</file>
+        <file>gfx/help-circle.png</file>
+        <file>gfx/sign-stop.png</file>
+        <file>gfx/file-code-setting.png</file>
+        <file>gfx/rss-feed.png</file>
+        <file>gfx/skull-2.png</file>
+        <file>gfx/transfer-3.png</file>
+        <file>gfx/add-2.png</file>
+        <file>gfx/file-new-2.png</file>
+        <file>gfx/file-view-2.png</file>
+        <file>gfx/remove-2.png</file>
+        <file>gfx/translate.png</file>
+        <file>gfx/button-power-2.png</file>
+        <file>gfx/cloud-add.png</file>
+        <file>gfx/cloud-remove.png</file>
+        <file>gfx/cloud-setting.png</file>
+        <file>gfx/cloud-refresh.png</file>
+        <file>gfx/cloud-sync.png</file>
+        <file>gfx/book-favorite-1.png</file>
+        <file>gfx/file-copyright.png</file>
+        <file>gfx/file-pdf.png</file>
+        <file>gfx/print-text.png</file>
+        <file>gfx/share.png</file>
+        <file>gfx/infomation-circle.png</file>
+    </qresource>
 </RCC>

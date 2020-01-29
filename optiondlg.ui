@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>optiondlg</class>
+ <widget class="QDialog" name="optiondlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="4" column="2">
+    <widget class="QPushButton" name="cancelBtn">
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="helpBtn">
+     <property name="text">
+      <string>&amp;Help</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Cache:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="4" column="1">
+       <widget class="QLabel" name="cacheSize">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="cacheMoveBtn">
+        <property name="toolTip">
+         <string>Moves the cache folder to new location</string>
+        </property>
+        <property name="text">
+         <string>&amp;Move...</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>:/gfx/transfer-3.png</normalon>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="cacheClearBtn">
+        <property name="toolTip">
+         <string>Removes all the files and folder from the cache location</string>
+        </property>
+        <property name="text">
+         <string>&amp;Clear</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>:/gfx/skull-2.png</normalon>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Current cache size is (MB):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Cache &amp;folder location:</string>
+        </property>
+        <property name="buddy">
+         <cstring>cacheEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QCheckBox" name="cacheAttached">
+        <property name="text">
+         <string>Cache attachments (applies to attached media, not content)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="cacheEdit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>21</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QPushButton" name="okBtn">
+     <property name="text">
+      <string>&amp;OK</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Data file:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Data file &amp;location:</string>
+        </property>
+        <property name="buddy">
+         <cstring>dbFolderEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="clearDBBtn">
+        <property name="toolTip">
+         <string>Clears the data file. All will be lost!</string>
+        </property>
+        <property name="text">
+         <string>Cl&amp;ear</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>:/gfx/skull-2.png</normalon>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QLabel" name="dbFileSize">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="dbFolderEdit">
+        <property name="minimumSize">
+         <size>
+          <width>211</width>
+          <height>21</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QPushButton" name="moveDBBtn">
+        <property name="toolTip">
+         <string>Moves the data file to a new location. </string>
+        </property>
+        <property name="text">
+         <string>M&amp;ove...</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>:/gfx/transfer-3.png</normalon>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Current size (MB):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="newDBBtn">
+        <property name="toolTip">
+         <string>Creates new, empty data file</string>
+        </property>
+        <property name="text">
+         <string>Ne&amp;w...</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>:/gfx/file-new-2.png</normalon>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QPushButton" name="openDBBtn">
+        <property name="toolTip">
+         <string>Opens existing data file</string>
+        </property>
+        <property name="text">
+         <string>O&amp;pen..</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>:/gfx/file-view-2.png</normalon>
+         </iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Downloads:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>&amp;Download to:</string>
+        </property>
+        <property name="buddy">
+         <cstring>downloadEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="downloadEdit">
+        <property name="minimumSize">
+         <size>
+          <width>241</width>
+          <height>21</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="downloadAskBox">
+        <property name="text">
+         <string>&amp;Ask every time</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Periods:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="checkContentBox">
+        <property name="text">
+         <string>Check for &amp;new content eveery (min):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="spinBox">
+        <property name="minimumSize">
+         <size>
+          <width>51</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>999</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="honorSkipBox">
+        <property name="text">
+         <string>H&amp;onor &quot;skip days&quot; and &quot;skip hours&quot; options if they're provided</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>okBtn</tabstop>
+  <tabstop>cacheEdit</tabstop>
+  <tabstop>cacheClearBtn</tabstop>
+  <tabstop>cacheMoveBtn</tabstop>
+  <tabstop>cacheAttached</tabstop>
+  <tabstop>downloadEdit</tabstop>
+  <tabstop>downloadAskBox</tabstop>
+  <tabstop>dbFolderEdit</tabstop>
+  <tabstop>clearDBBtn</tabstop>
+  <tabstop>moveDBBtn</tabstop>
+  <tabstop>helpBtn</tabstop>
+  <tabstop>cancelBtn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

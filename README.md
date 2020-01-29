@@ -5,7 +5,9 @@ SmallRSS - micro RSS reader, QtWidgets frontend
 
 ## Target platforms: Windows, macOS, Linux.
 
-Build instructions, releases, wiki etc. will be added in due time.
+Build instructions, releases, wiki etc. will be added/updated in due time.
+
+Implementation based on document [RSS 2.0 at Harvard Law - Internet technology hosted by Berkman Center](https://cyber.harvard.edu/rss/rss.html)
 
 [(c)2020 Artur Wawrowski (t/a TrollNet)](https://trollnet.com.pl/)
 

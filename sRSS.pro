@@ -1,4 +1,4 @@
-QT       += core gui xml network sql
+QT       += core gui xml network sql printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,13 +17,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    optiondlg.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    optiondlg.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    optiondlg.ui
 
 TRANSLATIONS += \
     sRSS_en_GB.ts
@@ -36,6 +39,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     COPYING \
     GNU GENERAL PUBLIC LICENSE \
+    README.md \
+    itemschema.sql \
     lic_template
 
 RESOURCES += \

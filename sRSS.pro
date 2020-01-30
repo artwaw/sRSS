@@ -18,11 +18,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    optiondlg.cpp
+    optiondlg.cpp \
+    treemodel.cpp
 
 HEADERS += \
     mainwindow.h \
-    optiondlg.h
+    optiondlg.h \
+    treemodel.h
 
 FORMS += \
     mainwindow.ui \

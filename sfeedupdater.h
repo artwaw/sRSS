@@ -12,3 +12,40 @@ You should have received a copy of the GNU General Public License
 along with sRSS.  If not, see <https://www.gnu.org/licenses/>.
 SPDX: GPL-3.0-or-later
 */
+#ifndef SFEEDUPDATER_H
+#define SFEEDUPDATER_H
+
+#include <QtCore/QObject>
+#include <QtCore/qglobal.h>
+#include <QtNetwork>
+#include <QtSql>
+
+class sFeedUpdater : public QObject
+{
+    Q_OBJECT
+public:
+    explicit sFeedUpdater(QObject *parent = nullptr);
+
+public slots:
+    void startTimer(const int interval);
+    void stopTimer();
+    void pollOne(QString url);
+
+
+private slots:
+    void finished(QNetworkReply *reply);
+    void timeout();
+
+private:
+   QNetworkAccessManager *manager;
+   int timerID;
+   QNetworkCookieJar *jar;
+
+   void processXML(QByteArray data);
+
+signals:
+   void newData();
+
+};
+
+#endif // SFEEDUPDATER_H

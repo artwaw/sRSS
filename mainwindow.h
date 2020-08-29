@@ -22,6 +22,7 @@ SPDX: GPL-3.0-or-later
 #include <QtSql>
 
 #include "optiondlg.h"
+#include "addchannel.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -40,7 +41,7 @@ protected:
 
 private slots:
 //    void updateItems();
-//    void addChannel();
+    void addChannel();
 //    void editChannel();
 //    void removeChannel();
 //    void starItem();

@@ -26,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     }
     loadSettings();
     connect(ui->action_Quit,&QAction::triggered,this,&MainWindow::closeApp);
+    connect(ui->action_Add,&QAction::triggered,this,&MainWindow::addChannel);
 }
 
 MainWindow::~MainWindow()
@@ -49,11 +50,11 @@ bool MainWindow::initDB() {
 }
 
 void MainWindow::zeroconf() {
-    QDir path(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)+"sRSS/");
+    QDir path(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
     if (!path.exists()) {
-        path.mkpath(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)+"sRSS/");
+        path.mkpath(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
     }
-    settings.setValue("dbfile",QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)+"sRSS/sRSS.srss");
+    settings.setValue("dbfile",QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)+"/sRSS.srss");
     settings.setValue("cache",QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation));
     settings.setValue("envelopes",true);
     settings.setValue("downloads",QStandardPaths::writableLocation(QStandardPaths::DownloadLocation));
@@ -61,7 +62,7 @@ void MainWindow::zeroconf() {
     settings.setValue("autocheck",true);
     settings.setValue("autointerval",15);
     settings.setValue("honor",true);
-    settings.sync();
+    saveSettings();
     if (!initDB()) {
         criticalMsg(tr("Error opening file"),tr("There was an error creating data file using default filename and path. Please go to settings and verify the data file location."));
         return;
@@ -112,3 +113,8 @@ void MainWindow::clearCache() {
     }
 }
 
+void MainWindow::addChannel() {
+    class addChannel addDialog;
+    if (addDialog.exec()==QDialog::Rejected) { return;}
+
+}

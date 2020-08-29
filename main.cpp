@@ -23,7 +23,6 @@ SPDX: GPL-3.0-or-later
 #endif
 
 #include <QtPlugin>
-#include <QStyleFactory>
 #include <QTranslator>
 #include <QLibraryInfo>
 
@@ -36,7 +35,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("trollnet.com.pl");
     QCoreApplication::setApplicationName("sRSS");
     QApplication a(argc, argv);
-    a.setStyle(QStyleFactory::create("Fusion"));
+    QCoreApplication::addLibraryPath("/libs");
     MainWindow w;
     w.setAttribute(Qt::WA_AlwaysShowToolTips);
     QTranslator qtTranslator;

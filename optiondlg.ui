@@ -263,7 +263,7 @@
       <item row="0" column="0">
        <widget class="QCheckBox" name="checkContentBox">
         <property name="text">
-         <string>Check for &amp;new content eveery (min):</string>
+         <string>Check for &amp;new content every (min):</string>
         </property>
        </widget>
       </item>

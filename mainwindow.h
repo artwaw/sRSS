@@ -20,9 +20,12 @@ SPDX: GPL-3.0-or-later
 #include <QtWidgets>
 #include <QtGui>
 #include <QtSql>
+#include <QWebView>
 
 #include "optiondlg.h"
 #include "addchannel.h"
+#include "channelmodel.h"
+#include "itemsmodel.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -49,6 +52,15 @@ private slots:
 //    void moveCache(QString target);
 //    void clearDB();
 //    void moveDB(QString target);
+    void itemAct(QModelIndex idx);
+    void itemSelect(QModelIndex idx);
+    void restoreHeaders();
+#ifndef QT_NO_CONTEXT_MENU
+    void setupItemHeaderContextMenu();
+    void setupChannelContextMenu();
+    void itemHeaderMenuRequested(QPoint pos);
+    void channelContextMenuRequested(QPoint pos);
+#endif
     [[ noreturn ]] void closeApp();
 //    void newDB();
 //    void openDB();
@@ -56,11 +68,18 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QSettings settings;
+    ChannelModel *channels;
+    ItemsModel *items;
+    QMenu *itemHeaderContextMenu;
+    QMenu *channelContextMenu;
+    bool firstrun;
 
     void zeroconf();
     void loadSettings();
     void saveSettings();
     bool initDB();
+    void initChannels();
+    void initItems();
     void criticalMsg(const QString reason, const QString msg);
     [[ noreturn ]] void fail(const qint32 excode, const QString reason, const QString msg);
 };

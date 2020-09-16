@@ -42,6 +42,7 @@ void addChannel::finished(QNetworkReply *reply) {
             items=parser.getItemsInfo();
             reply->deleteLater();
             accept();
+            return;
         }
     }
     reply->deleteLater();

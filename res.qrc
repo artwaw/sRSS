@@ -29,5 +29,6 @@
         <file>gfx/print-text.png</file>
         <file>gfx/share.png</file>
         <file>gfx/infomation-circle.png</file>
+        <file>gfx/hbookmark.png</file>
     </qresource>
 </RCC>

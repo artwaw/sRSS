@@ -19,6 +19,7 @@ SOURCES += \
     addchannel.cpp \
     channelmodel.cpp \
     channelparser.cpp \
+    itemdelegate.cpp \
     itemsmodel.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -29,6 +30,7 @@ HEADERS += \
     addchannel.h \
     channelmodel.h \
     channelparser.h \
+    itemdelegate.h \
     itemsmodel.h \
     mainwindow.h \
     optiondlg.h \

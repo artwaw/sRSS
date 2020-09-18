@@ -80,7 +80,7 @@ void MainWindow::zeroconf() {
     if (query.lastError().type()!=QSqlError::NoError) {
         fail(1,tr("Error while data file init"),tr("Something went wrong while preparing the data file. Please forward the below info to srss@trollnet.com.pl: sIndex - ")+query.lastError().text());
     }
-    query.exec("create table items(id integer primary key, origin integer not null, title text, link text, description text, author text, category text, comments text, guid text, enclink text, enclen integer, enctype text, pubdate text, star bool);");
+    query.exec("create table items(id integer primary key, origin integer not null, title text, link text, description text, author text, category text, comments text, guid text, enclink text, enclen integer, enctype text, pubdate text, star bool, read bool);");
     if (query.lastError().type()!=QSqlError::NoError) {
         fail(1,tr("Error while data file init"),tr("Something went wrong while preparing the data file. Please forward the below info to srss@trollnet.com.pl: Items - ")+query.lastError().text());
     }
@@ -174,9 +174,11 @@ void MainWindow::addChannel() {
         rec.setValue("enctype",chinfo.at(x).enclosure.type);
         rec.setValue("pundate",chinfo.at(x).pubDate.toString(Qt::ISODate));
         rec.setValue("star",false);
+        rec.setValue("read",false);
         items->insertRecord(-1,rec);
         rec.clearValues();
     }
+    items->select();
 }
 
 void MainWindow::initItems() {
@@ -186,15 +188,14 @@ void MainWindow::initItems() {
     items = new ItemsModel(this,QSqlDatabase::database(QSqlDatabase::defaultConnection,true));
     items->setTable("items");
     items->setHeaderData(2,Qt::Horizontal,QVariant(tr("Title")));
-    //items->setHeaderData(4,Qt::Horizontal,QVariant(tr("Description")));
+    items->setHeaderData(4,Qt::Horizontal,QVariant(tr("Description")));
     items->setHeaderData(5,Qt::Horizontal,QVariant(tr("Author")));
     items->setHeaderData(12,Qt::Horizontal,QVariant(tr("Publication date")));
     items->setHeaderData(13,Qt::Horizontal,QVariant(tr("Bookmark")));
     items->select();
     ui->itemsView->setModel(items);
     connect(ui->itemsView->horizontalHeader(),&QHeaderView::customContextMenuRequested,this,&MainWindow::itemHeaderMenuRequested);
-    connect(ui->channelListView,&QListView::activated,this,&MainWindow::itemAct);
-    connect(ui->itemsView,&QTableView::activated,this,&MainWindow::itemSelect);
+    connect(ui->channelListView,&QListView::clicked,this,&MainWindow::itemAct);
     items->select();
     restoreHeaders();
     if (!firstrun) {
@@ -206,6 +207,10 @@ void MainWindow::initItems() {
         }
         settings.endArray();
     }
+    connect(ui->itemsView,&QTableView::clicked,this,&MainWindow::starItem);
+    connect(ui->webview,&QWebView::loadFinished,this,&MainWindow::onItemLoad);
+    ItemDelegate *itemDelegate = new ItemDelegate(this);
+    ui->itemsView->setItemDelegate(itemDelegate);
 #ifndef QT_NO_CONTEXT_MENU
     ui->itemsView->horizontalHeader()->setContextMenuPolicy(Qt::CustomContextMenu);
     setupItemHeaderContextMenu();
@@ -219,6 +224,10 @@ void MainWindow::setupItemHeaderContextMenu() {
     titleBox->setCheckable(true);
     titleBox->setChecked(!ui->itemsView->isColumnHidden(2));
     itemHeaderContextMenu->addAction(titleBox);
+    QAction *descBox = new QAction(tr("Description"));
+    descBox->setCheckable(true);
+    descBox->setChecked(!ui->itemsView->isColumnHidden(4));
+    itemHeaderContextMenu->addAction(descBox);
     QAction *authorBox = new QAction(tr("Author"));
     authorBox->setCheckable(true);
     authorBox->setChecked(!ui->itemsView->isColumnHidden(5));
@@ -266,23 +275,38 @@ void MainWindow::restoreHeaders() {
     ui->itemsView->setColumnHidden(0,true);
     ui->itemsView->setColumnHidden(1,true);
     ui->itemsView->setColumnHidden(3,true);
-    ui->itemsView->setColumnHidden(4,true);
+    //ui->itemsView->setColumnHidden(4,true);
     ui->itemsView->setColumnHidden(6,true);
     ui->itemsView->setColumnHidden(7,true);
     ui->itemsView->setColumnHidden(8,true);
     ui->itemsView->setColumnHidden(9,true);
     ui->itemsView->setColumnHidden(10,true);
     ui->itemsView->setColumnHidden(11,true);
+    ui->itemsView->setColumnHidden(14,true);
     ui->itemsView->resizeColumnsToContents();
+    ui->itemsView->resizeRowsToContents();
 }
 
 void MainWindow::itemAct(QModelIndex idx) {
     qDebug() << idx.row() << idx.column() << idx.data();
-    qDebug() << items->data(idx.sibling(idx.row(),3)).toString();
+    qDebug() << items->data(idx.sibling(idx.row(),4)).toString();
 }
 
-void MainWindow::itemSelect(QModelIndex idx) {
-    qDebug() << idx.row() << idx.column() << idx.data();
-    qDebug() << items->data(idx.sibling(idx.row(),3)).toString();
-    ui->webview->load(items->data(idx.sibling(idx.row(),3)).toUrl());
+void MainWindow::starItem(const QModelIndex &idx) {
+    if (idx.column()!=13) {
+        ui->webview->load(items->data(idx.sibling(idx.row(),3)).toUrl());
+        return;
+    }
+    QSqlRecord rec = items->record(idx.row());
+    rec.setValue("star",!rec.value("star").toBool());
+    items->setRecord(idx.row(),rec);
+    items->select();
+}
+
+void MainWindow::onItemLoad(bool ecode) {
+    if (!ecode) { return; }
+    QSqlRecord rec = items->record(ui->itemsView->selectionModel()->currentIndex().row());
+    rec.setValue("read",true);
+    items->setRecord(ui->itemsView->selectionModel()->currentIndex().row(),rec);
+    items->select();
 }

@@ -26,6 +26,7 @@ SPDX: GPL-3.0-or-later
 #include "addchannel.h"
 #include "channelmodel.h"
 #include "itemsmodel.h"
+#include "itemdelegate.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -47,14 +48,14 @@ private slots:
     void addChannel();
 //    void editChannel();
 //    void removeChannel();
-//    void starItem();
+    void starItem(const QModelIndex &idx);
     void clearCache();
 //    void moveCache(QString target);
 //    void clearDB();
 //    void moveDB(QString target);
     void itemAct(QModelIndex idx);
-    void itemSelect(QModelIndex idx);
     void restoreHeaders();
+    void onItemLoad(bool ecode);
 #ifndef QT_NO_CONTEXT_MENU
     void setupItemHeaderContextMenu();
     void setupChannelContextMenu();

@@ -4,7 +4,6 @@
 #include <QSqlTableModel>
 #include <QObject>
 #include <QImage>
-#include <QPixmap>
 #include <QTextDocument>
 #include <QDebug>
 

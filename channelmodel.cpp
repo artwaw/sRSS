@@ -19,9 +19,10 @@ QVariant ChannelModel::data(const QModelIndex &idx, int role) const {
         if (role==Qt::DecorationRole) {
             QString path=settings.value("cache").toString()+"/channels/";
             if (QFile::exists(path+data(idx.siblingAtColumn(0)).toString()+".xcf")) {
-                return QPixmap(path+data(idx.siblingAtColumn(0)).toString()+".xcf");
+                return QImage(path+data(idx.siblingAtColumn(0)).toString()+".xcf");
             } else {
-                return QPixmap(":/gfx/rss-feed.png").scaled(16,16,Qt::KeepAspectRatio,Qt::SmoothTransformation);
+                //return QImage(":/gfx/rss-feed.png");
+                return QVariant();
             }
         }
         if (role==Qt::ToolTipRole) {

@@ -3,12 +3,14 @@
 
 #include <QStyledItemDelegate>
 #include <QObject>
+#include <QPainter>
+#include <QPolygon>
 
 class ItemDelegate : public QStyledItemDelegate
 {
     Q_OBJECT
 public:
-    explicit ItemDelegate(QObject *parent=0);
+    explicit ItemDelegate(QObject *parent=nullptr);
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const;
 };
 

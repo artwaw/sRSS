@@ -17,27 +17,38 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     addchannel.cpp \
+    cacheclass.cpp \
+    channeldelegate.cpp \
+    channeleditdialog.cpp \
     channelmodel.cpp \
     channelparser.cpp \
     itemdelegate.cpp \
+    itemproxymodel.cpp \
     itemsmodel.cpp \
     main.cpp \
     mainwindow.cpp \
     optiondlg.cpp \
-    sfeedupdater.cpp
+    sfeedupdater.cpp \
+    tncookiejar.cpp
 
 HEADERS += \
     addchannel.h \
+    cacheclass.h \
+    channeldelegate.h \
+    channeleditdialog.h \
     channelmodel.h \
     channelparser.h \
     itemdelegate.h \
+    itemproxymodel.h \
     itemsmodel.h \
     mainwindow.h \
     optiondlg.h \
-    sfeedupdater.h
+    sfeedupdater.h \
+    tncookiejar.h
 
 FORMS += \
     addchannel.ui \
+    channeleditdialog.ui \
     mainwindow.ui \
     optiondlg.ui
 

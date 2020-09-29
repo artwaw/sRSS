@@ -27,6 +27,9 @@ SPDX: GPL-3.0-or-later
 #include "channelmodel.h"
 #include "itemsmodel.h"
 #include "itemdelegate.h"
+#include "itemproxymodel.h"
+#include "channeldelegate.h"
+#include "cacheclass.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -70,10 +73,13 @@ private:
     Ui::MainWindow *ui;
     QSettings settings;
     ChannelModel *channels;
+    ItemProxyModel *itemproxy;
     ItemsModel *items;
     QMenu *itemHeaderContextMenu;
     QMenu *channelContextMenu;
     bool firstrun;
+    CacheClass *cache;
+    QNetworkAccessManager *manager;
 
     void zeroconf();
     void loadSettings();

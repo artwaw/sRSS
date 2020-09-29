@@ -36,6 +36,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->webview,&QWebView::loadProgress,statusProgress,&QProgressBar::setValue);
     connect(ui->webview,&QWebView::loadFinished,statusProgress,&QProgressBar::reset);
     ui->statusbar->addPermanentWidget(statusProgress);
+    cache = new CacheClass(this);
+    manager = new QNetworkAccessManager(this);
+    manager->setCookieJar(cache->getCookieJar());
+    manager->setCache(cache->getCache());
+    ui->webview->page()->setNetworkAccessManager(manager);
 }
 
 MainWindow::~MainWindow() {
@@ -63,7 +68,7 @@ void MainWindow::zeroconf() {
         path.mkpath(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
     }
     settings.setValue("dbfile",QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)+"/sRSS.srss");
-    settings.setValue("cache",QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation));
+    settings.setValue("cache",QStandardPaths::writableLocation(QStandardPaths::CacheLocation));
     settings.setValue("envelopes",true);
     settings.setValue("downloads",QStandardPaths::writableLocation(QStandardPaths::DownloadLocation));
     settings.setValue("askdownload",false);
@@ -76,10 +81,12 @@ void MainWindow::zeroconf() {
         return;
     }
     QSqlQuery query;
-    query.exec("create table sIndex(id integer primary key, rgroup integer, title text not null, link text not null, description text not null, lang text, copyright text, mandir text, webmaster text, pubdate text, lastbuild text, category text, generator text, docs text, ttl integer, imgurl text, imgwidth integer, imgheight integer, skiphrs text, skipdays text);");
+    query.exec("create table sIndex(id integer primary key, rgroup integer, title text not null, link text not null unique, description text not null, lang text, copyright text, mandir text, webmaster text, pubdate text, lastbuild text, category text, generator text, docs text, ttl integer, imgurl text, imgwidth integer, imgheight integer, skiphrs text, skipdays text);");
     if (query.lastError().type()!=QSqlError::NoError) {
         fail(1,tr("Error while data file init"),tr("Something went wrong while preparing the data file. Please forward the below info to srss@trollnet.com.pl: sIndex - ")+query.lastError().text());
     }
+    query.exec("insert into sIndex(title,link,description) values('Unread','unread','All unread items');");
+    query.exec("insert into sIndex(title,link,description) values('Bookmarked','bookmarked','All bookmarked items');");
     query.exec("create table items(id integer primary key, origin integer not null, title text, link text, description text, author text, category text, comments text, guid text, enclink text, enclen integer, enctype text, pubdate text, star bool, read bool);");
     if (query.lastError().type()!=QSqlError::NoError) {
         fail(1,tr("Error while data file init"),tr("Something went wrong while preparing the data file. Please forward the below info to srss@trollnet.com.pl: Items - ")+query.lastError().text());
@@ -113,6 +120,8 @@ void MainWindow::initChannels() {
     ui->channelListView->setMovement(QListView::Static);
     ui->channelListView->setIconSize(QSize(16,16));
     channels->select();
+    ChannelDelegate *chdelegate = new ChannelDelegate(this);
+    ui->channelListView->setItemDelegate(chdelegate);
 #ifndef QT_NO_CONTEXT_MENU
     ui->channelListView->setContextMenuPolicy(Qt::CustomContextMenu);
     setupChannelContextMenu();
@@ -193,7 +202,9 @@ void MainWindow::initItems() {
     items->setHeaderData(12,Qt::Horizontal,QVariant(tr("Publication date")));
     items->setHeaderData(13,Qt::Horizontal,QVariant(tr("Bookmark")));
     items->select();
-    ui->itemsView->setModel(items);
+    itemproxy = new ItemProxyModel(this);
+    itemproxy->setSourceModel(items);
+    ui->itemsView->setModel(itemproxy);
     connect(ui->itemsView->horizontalHeader(),&QHeaderView::customContextMenuRequested,this,&MainWindow::itemHeaderMenuRequested);
     connect(ui->channelListView,&QListView::clicked,this,&MainWindow::itemAct);
     items->select();
@@ -288,13 +299,21 @@ void MainWindow::restoreHeaders() {
 }
 
 void MainWindow::itemAct(QModelIndex idx) {
-    qDebug() << idx.row() << idx.column() << idx.data();
-    qDebug() << items->data(idx.sibling(idx.row(),4)).toString();
+    itemproxy->invalidate();
+    switch (idx.row()) {
+        case 0: itemproxy->setFilterKeyColumn(14);
+                break;
+        case 1: itemproxy->setFilterKeyColumn(13);
+                break;
+        default: itemproxy->setFilterKeyColumn(1);
+                 itemproxy->setFilterFixedString(idx.sibling(idx.row(),0).data().toString());
+    }
 }
 
 void MainWindow::starItem(const QModelIndex &idx) {
     if (idx.column()!=13) {
-        ui->webview->load(items->data(idx.sibling(idx.row(),3)).toUrl());
+        ui->webview->load(itemproxy->data(idx.sibling(idx.row(),3)).toUrl());
+        qDebug() << itemproxy->data(idx.sibling(idx.row(),3)).toString();
         return;
     }
     QSqlRecord rec = items->record(idx.row());
@@ -305,8 +324,8 @@ void MainWindow::starItem(const QModelIndex &idx) {
 
 void MainWindow::onItemLoad(bool ecode) {
     if (!ecode) { return; }
-    QSqlRecord rec = items->record(ui->itemsView->selectionModel()->currentIndex().row());
+    QSqlRecord rec = items->record(itemproxy->mapToSource(ui->itemsView->selectionModel()->currentIndex()).row());
     rec.setValue("read",true);
-    items->setRecord(ui->itemsView->selectionModel()->currentIndex().row(),rec);
+    items->setRecord(itemproxy->mapToSource(ui->itemsView->selectionModel()->currentIndex()).row(),rec);
     items->select();
 }

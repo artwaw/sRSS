@@ -1,0 +1,8 @@
+<map id="addChannel::finished" name="addChannel::finished">
+<area shape="rect" id="node1" title="Method processing network replies when adding the channel." alt="" coords="5,56,152,83"/>
+<area shape="rect" id="node2" href="$class_channel_parser.html#a6a3a5de3d002cb877bc7e9073c871434" title=" " alt="" coords="200,5,409,32"/>
+<area shape="rect" id="node3" href="$class_channel_parser.html#aa2d24e286b4f6e866b6473efb9201db7" title=" " alt="" coords="209,56,401,83"/>
+<area shape="rect" id="node4" href="$class_channel_parser.html#a98b0f031bba1457e8b323b03ae69d6a4" title=" " alt="" coords="215,107,395,133"/>
+<area shape="rect" id="node5" href="$class_channel_parser.html#a1ad2a6444b0ec7bb727e4b4207649ff2" title=" " alt="" coords="457,107,604,133"/>
+<area shape="rect" id="node6" href="$class_channel_parser.html#a3fee8e66e2e9c233ef3711ce0ef3d3bf" title=" " alt="" coords="652,107,788,133"/>
+</map>

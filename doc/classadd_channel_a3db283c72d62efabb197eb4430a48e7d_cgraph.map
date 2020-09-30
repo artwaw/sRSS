@@ -1,0 +1,11 @@
+<map id="addChannel::addChannel" name="addChannel::addChannel">
+<area shape="rect" id="node1" title="generic constructor. Inits the view." alt="" coords="5,132,179,159"/>
+<area shape="rect" id="node2" href="$classadd_channel.html#afabb6599ae9db1067e636e297ec8a63c" title="Method sending GET request asking for RSS channel info and data." alt="" coords="245,56,369,83"/>
+<area shape="rect" id="node3" href="$classadd_channel.html#a6dc89f25a8fcee5a8804f31ef061c721" title="Method processing network replies when adding the channel." alt="" coords="233,107,380,133"/>
+<area shape="rect" id="node8" href="$class_channel_parser.html#a3fee8e66e2e9c233ef3711ce0ef3d3bf" title=" " alt="" coords="887,132,1023,159"/>
+<area shape="rect" id="node9" href="$classadd_channel.html#a6dc3e0683c03ee3eaec7e7b2aa4f6dc6" title="Helper method making sure that appropriate buttons are disabled until input has data in more or less ..." alt="" coords="227,208,387,235"/>
+<area shape="rect" id="node4" href="$class_channel_parser.html#a6a3a5de3d002cb877bc7e9073c871434" title=" " alt="" coords="435,5,644,32"/>
+<area shape="rect" id="node5" href="$class_channel_parser.html#aa2d24e286b4f6e866b6473efb9201db7" title=" " alt="" coords="443,56,635,83"/>
+<area shape="rect" id="node6" href="$class_channel_parser.html#a98b0f031bba1457e8b323b03ae69d6a4" title=" " alt="" coords="449,107,629,133"/>
+<area shape="rect" id="node7" href="$class_channel_parser.html#a1ad2a6444b0ec7bb727e4b4207649ff2" title=" " alt="" coords="692,107,839,133"/>
+</map>

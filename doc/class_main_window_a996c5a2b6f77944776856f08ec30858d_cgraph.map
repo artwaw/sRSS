@@ -1,0 +1,27 @@
+<map id="MainWindow::MainWindow" name="MainWindow::MainWindow">
+<area shape="rect" id="node1" title=" " alt="" coords="5,645,188,671"/>
+<area shape="rect" id="node2" href="$class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title=" " alt="" coords="237,173,415,199"/>
+<area shape="rect" id="node7" href="$class_main_window.html#aaa567a50ce7194fc11d55b0b06a43dd1" title=" " alt="" coords="246,594,406,621"/>
+<area shape="rect" id="node9" href="$class_cache_class.html#a529bfa1dcfff3f124815b544854a1f1f" title="Method returning pointer to internal disk cache object." alt="" coords="247,746,405,773"/>
+<area shape="rect" id="node10" href="$class_cache_class.html#a138f49e4b0a05f792f266e49a0f9c9ca" title="Method returning pointer to internal cookie jar object." alt="" coords="236,797,416,823"/>
+<area shape="rect" id="node11" href="$class_main_window.html#a785a675534a443aa0e6b79f53de7ade3" title=" " alt="" coords="237,71,415,98"/>
+<area shape="rect" id="node14" href="$class_main_window.html#a6414051d72dd212134e879b9b13c44b9" title=" " alt="" coords="497,695,639,722"/>
+<area shape="rect" id="node15" href="$class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="248,451,404,478"/>
+<area shape="rect" id="node22" href="$class_main_window.html#a9bb1f3b7f6b5360abfd2dc01fc1c8930" title=" " alt="" coords="237,847,415,874"/>
+<area shape="rect" id="node23" href="$class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="247,695,405,722"/>
+<area shape="rect" id="node3" href="$classadd_channel.html#abcb70696760597b9e7d813bbc6cf4015" title="Getter method for details of freshly added channel." alt="" coords="472,173,664,199"/>
+<area shape="rect" id="node4" href="$classadd_channel.html#ab697a61986b6ef52a96a73385c7daf67" title="Getter method for items from the freshly added channel." alt="" coords="467,223,669,250"/>
+<area shape="rect" id="node5" href="$class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title=" " alt="" coords="493,71,643,98"/>
+<area shape="rect" id="node6" href="$class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title=" " alt="" coords="757,350,891,377"/>
+<area shape="rect" id="node8" href="$class_main_window.html#abb30531afee763d0586ee6323fd332e2" title=" " alt="" coords="477,645,659,671"/>
+<area shape="rect" id="node12" href="$class_main_window.html#a5d2db4b1975b390fd9a78bc3ab8340a7" title=" " alt="" coords="474,5,662,47"/>
+<area shape="rect" id="node13" href="$class_main_window.html#a5c4520dbb20f711ce38c6d3973e4f679" title=" " alt="" coords="725,5,923,47"/>
+<area shape="rect" id="node16" href="$class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd" title=" " alt="" coords="493,274,643,301"/>
+<area shape="rect" id="node17" href="$class_main_window.html#a3572db0791eefd0369bc679b581f5914" title=" " alt="" coords="720,499,928,540"/>
+<area shape="rect" id="node18" href="$class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67" title=" " alt="" coords="480,325,656,351"/>
+<area shape="rect" id="node19" href="$class_main_window.html#a9feda9728da59eb5ad25a666444b57fc" title=" " alt="" coords="725,565,923,591"/>
+<area shape="rect" id="node20" href="$class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf" title=" " alt="" coords="464,528,672,569"/>
+<area shape="rect" id="node21" href="$class_main_window.html#a49279ad253843874949bd5d14bf69005" title=" " alt="" coords="491,375,645,402"/>
+<area shape="rect" id="node24" href="$class_main_window.html#a98b0cfb00f05f003d5f17edd5470a684" title=" " alt="" coords="483,746,653,773"/>
+<area shape="rect" id="node25" href="$class_main_window.html#a985bdf98220a3c6603a6edeb0bbcd96b" title=" " alt="" coords="507,797,629,823"/>
+</map>

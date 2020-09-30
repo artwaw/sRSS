@@ -1,4 +1,0 @@
-<map id="addChannel::verifyBtns" name="addChannel::verifyBtns">
-<area shape="rect" id="node1" title="Helper method making sure that appropriate buttons are disabled until input has data in more or less ..." alt="" coords="227,5,387,32"/>
-<area shape="rect" id="node2" href="$classadd_channel.html#a3db283c72d62efabb197eb4430a48e7d" title="generic constructor. Inits the view." alt="" coords="5,5,179,32"/>
-</map>

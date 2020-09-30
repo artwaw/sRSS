@@ -1,8 +1,0 @@
-<map id="addChannel" name="addChannel">
-<area shape="rect" id="node1" title="QDialog offering the user an option to add new RSS channel." alt="" coords="109,273,202,300"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,184,76,211"/>
-<area shape="rect" id="node3" href="$class_channel_parser.html" title=" " alt="" coords="100,184,211,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="71,95,141,121"/>
-<area shape="rect" id="node5" href="$struct_channel_parser_1_1channel_info.html" title=" " alt="" coords="166,95,353,121"/>
-<area shape="rect" id="node6" href="$struct_channel_parser_1_1img.html" title=" " alt="" coords="189,5,329,32"/>
-</map>

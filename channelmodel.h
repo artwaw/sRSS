@@ -7,6 +7,7 @@
 #include <QFile>
 #include <QPixmap>
 
+
 class ChannelModel : public QSqlTableModel
 {
     Q_OBJECT

@@ -35,15 +35,39 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+/*! \class MainWindow
+ * \brief Main thread class holding UI and main logic of the program */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
+    /*! \brief Generic constructor that inits the program.
+     *
+     * This ctor handles database initialisation, first run autodetection, inits models and views.
+     * This ctor is also resposible for network cache and cookie jar initialisation.
+     * \param parent Parent widget pointer or nullptr
+     * \see zeroconf()
+     * \see firstrun
+     * \see initDB()
+     * \see loadSettings()
+     * \see initItems()
+     * \see initChannels()
+     * \see cache
+     * \see manager */
     MainWindow(QWidget *parent = nullptr);
+
+    /*! \brief Generic destructor.
+     *
+     * The only thing destructor does is to destroy the UI. All closing logic is handled in closeEvent()
+     * \see closeEvent() */
     ~MainWindow() override;
 
 protected:
+    /*! \brief Event processed upon closing the main thread.
+     *
+     * In this event the state of the main window is being saved.
+     * \param event Generic QCloseEvent */
     void closeEvent(QCloseEvent *event) override;
 
 private slots:

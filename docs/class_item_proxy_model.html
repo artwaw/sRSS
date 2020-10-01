@@ -92,13 +92,16 @@ $(document).ready(function(){initNavTree('class_item_proxy_model.html',''); init
 </div><!--header-->
 <div class="contents">
 
+<p>Simple extension of the QSortFilterProxyModel providing missing flexible filter option.  
+ <a href="class_item_proxy_model.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="itemproxymodel_8h_source.html">itemproxymodel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ItemProxyModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_item_proxy_model__inherit__graph.png" border="0" usemap="#a_item_proxy_model_inherit__map" alt="Inheritance graph"/></div>
 <map name="_item_proxy_model_inherit__map" id="a_item_proxy_model_inherit__map">
-<area shape="rect" title=" " alt="" coords="25,80,143,107"/>
+<area shape="rect" title="Simple extension of the QSortFilterProxyModel providing missing flexible filter option." alt="" coords="25,80,143,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,163,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -107,7 +110,7 @@ Collaboration diagram for ItemProxyModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_item_proxy_model__coll__graph.png" border="0" usemap="#a_item_proxy_model_coll__map" alt="Collaboration graph"/></div>
 <map name="_item_proxy_model_coll__map" id="a_item_proxy_model_coll__map">
-<area shape="rect" title=" " alt="" coords="25,80,143,107"/>
+<area shape="rect" title="Simple extension of the QSortFilterProxyModel providing missing flexible filter option." alt="" coords="25,80,143,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,163,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -115,16 +118,19 @@ Collaboration diagram for ItemProxyModel:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ab4f02ebbd9bb5fc1e1799b264aa9f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_proxy_model.html#a0ab4f02ebbd9bb5fc1e1799b264aa9f8">ItemProxyModel</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a0ab4f02ebbd9bb5fc1e1799b264aa9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor. Calls parent's ctor directly.  <a href="class_item_proxy_model.html#a0ab4f02ebbd9bb5fc1e1799b264aa9f8">More...</a><br /></td></tr>
 <tr class="separator:a0ab4f02ebbd9bb5fc1e1799b264aa9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ade94015f5d2f6fc0b73dced119b82bd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_proxy_model.html#ade94015f5d2f6fc0b73dced119b82bd4">filterAcceptsRow</a> (int sourceRow, const QModelIndex &amp;sourceParent) const override</td></tr>
+<tr class="memdesc:ade94015f5d2f6fc0b73dced119b82bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method juggling rows on which the model is sorted in the view.  <a href="class_item_proxy_model.html#ade94015f5d2f6fc0b73dced119b82bd4">More...</a><br /></td></tr>
 <tr class="separator:ade94015f5d2f6fc0b73dced119b82bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="itemproxymodel_8h_source.html#l00007">7</a> of file <a class="el" href="itemproxymodel_8h_source.html">itemproxymodel.h</a>.</p>
+<div class="textblock"><p>Simple extension of the QSortFilterProxyModel providing missing flexible filter option. </p>
+
+<p class="definition">Definition at line <a class="el" href="itemproxymodel_8h_source.html#l00009">9</a> of file <a class="el" href="itemproxymodel_8h_source.html">itemproxymodel.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0ab4f02ebbd9bb5fc1e1799b264aa9f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ab4f02ebbd9bb5fc1e1799b264aa9f8">&#9670;&nbsp;</a></span>ItemProxyModel()</h2>
@@ -141,6 +147,14 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Generic constructor. Calls parent's ctor directly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent objects pointer or nullptr </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="itemproxymodel_8cpp_source.html#l00003">3</a> of file <a class="el" href="itemproxymodel_8cpp_source.html">itemproxymodel.cpp</a>.</p>
 
@@ -181,6 +195,16 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Method juggling rows on which the model is sorted in the view. </p>
+<p>By override we provide needed option to display unread only or bookmarked only. The method switches coverage based on the column (inverted read bool or bookmark bool). Acceptance of the data for those two column is set on the criteria above. For any other column parent method is called. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sourceRow</td><td>Row in the source model </td></tr>
+    <tr><td class="paramname">sourceParent</td><td>Index to the parent of the source data in source model </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data indicated by row and index should be included in the model, false otherwise </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="itemproxymodel_8cpp_source.html#l00005">5</a> of file <a class="el" href="itemproxymodel_8cpp_source.html">itemproxymodel.cpp</a>.</p>
 
 </div>
@@ -195,7 +219,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_item_proxy_model.html">ItemProxyModel</a></li>
-    <li class="footer">Generated on Wed Sep 30 2020 16:20:58 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Thu Oct 1 2020 15:32:53 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

@@ -1,4 +1,4 @@
 <map id="ChannelModel" name="ChannelModel">
-<area shape="rect" id="node1" title=" " alt="" coords="12,80,120,107"/>
+<area shape="rect" id="node1" title="Simple QSqlTableModel descendant providing data for the list of channels." alt="" coords="12,80,120,107"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,127,32"/>
 </map>

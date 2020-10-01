@@ -1,13 +1,13 @@
 <map id="MainWindow" name="MainWindow">
 <area shape="rect" id="node1" title=" " alt="" coords="259,260,357,287"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,171,115,197"/>
-<area shape="rect" id="node3" href="$class_items_model.html" title=" " alt="" coords="139,171,229,197"/>
+<area shape="rect" id="node3" href="$class_items_model.html" title="Simple QSqlTableModel descendant providing data for the items table view." alt="" coords="139,171,229,197"/>
 <area shape="rect" id="node4" title=" " alt="" coords="138,81,259,108"/>
-<area shape="rect" id="node5" href="$class_channel_model.html" title=" " alt="" coords="254,171,362,197"/>
+<area shape="rect" id="node5" href="$class_channel_model.html" title="Simple QSqlTableModel descendant providing data for the list of channels." alt="" coords="254,171,362,197"/>
 <area shape="rect" id="node6" href="$class_cache_class.html" title="Class holding custom cookie jar and disk cache instance that can be shared across the application." alt="" coords="387,171,480,197"/>
 <area shape="rect" id="node7" title=" " alt="" coords="289,81,359,108"/>
 <area shape="rect" id="node8" href="$class_t_n_cookie_jar.html" title=" " alt="" coords="383,81,483,108"/>
 <area shape="rect" id="node9" title=" " alt="" coords="363,5,504,32"/>
-<area shape="rect" id="node10" href="$class_item_proxy_model.html" title=" " alt="" coords="517,171,635,197"/>
+<area shape="rect" id="node10" href="$class_item_proxy_model.html" title="Simple extension of the QSortFilterProxyModel providing missing flexible filter option." alt="" coords="517,171,635,197"/>
 <area shape="rect" id="node11" title=" " alt="" coords="508,81,665,108"/>
 </map>

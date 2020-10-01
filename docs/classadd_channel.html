@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('classadd_channel.html',''); initResiza
 Inheritance diagram for addChannel:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadd_channel__inherit__graph.png" border="0" usemap="#aadd_channel_inherit__map" alt="Inheritance graph"/></div>
-<map name="add_channel_inherit__map" id="aadd_channel_inherit__map">
+<map name="add_channel_inherit__map" id="add_channel_inherit__map">
 <area shape="rect" title="QDialog offering the user an option to add new RSS channel." alt="" coords="5,80,99,107"/>
 <area shape="rect" title=" " alt="" coords="17,5,87,32"/>
 </map>
@@ -110,13 +110,13 @@ Inheritance diagram for addChannel:</div>
 Collaboration diagram for addChannel:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadd_channel__coll__graph.png" border="0" usemap="#aadd_channel_coll__map" alt="Collaboration graph"/></div>
-<map name="add_channel_coll__map" id="aadd_channel_coll__map">
+<map name="add_channel_coll__map" id="add_channel_coll__map">
 <area shape="rect" title="QDialog offering the user an option to add new RSS channel." alt="" coords="109,273,202,300"/>
 <area shape="rect" title=" " alt="" coords="5,184,76,211"/>
-<area shape="rect" href="class_channel_parser.html" title=" " alt="" coords="100,184,211,211"/>
+<area shape="rect" href="class_channel_parser.html" title="Class parsing the XML RSS info into ready to use structures." alt="" coords="100,184,211,211"/>
 <area shape="rect" title=" " alt="" coords="71,95,141,121"/>
-<area shape="rect" href="struct_channel_parser_1_1channel_info.html" title=" " alt="" coords="166,95,353,121"/>
-<area shape="rect" href="struct_channel_parser_1_1img.html" title=" " alt="" coords="189,5,329,32"/>
+<area shape="rect" href="struct_channel_parser_1_1channel_info.html" title="General info about the channel being added as parsed from XML (fields as per RFC)" alt="" coords="166,95,353,121"/>
+<area shape="rect" href="struct_channel_parser_1_1img.html" title="Substructure of ChannelParser::channelInfo with details of image (if supplied)" alt="" coords="189,5,329,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -215,16 +215,16 @@ Private Attributes</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadd_channel_a3db283c72d62efabb197eb4430a48e7d_cgraph.png" border="0" usemap="#aclassadd_channel_a3db283c72d62efabb197eb4430a48e7d_cgraph" alt=""/></div>
-<map name="classadd_channel_a3db283c72d62efabb197eb4430a48e7d_cgraph" id="aclassadd_channel_a3db283c72d62efabb197eb4430a48e7d_cgraph">
+<map name="classadd_channel_a3db283c72d62efabb197eb4430a48e7d_cgraph" id="classadd_channel_a3db283c72d62efabb197eb4430a48e7d_cgraph">
 <area shape="rect" title="generic constructor. Inits the view." alt="" coords="5,132,179,159"/>
 <area shape="rect" href="classadd_channel.html#afabb6599ae9db1067e636e297ec8a63c" title="Method sending GET request asking for RSS channel info and data." alt="" coords="245,56,369,83"/>
 <area shape="rect" href="classadd_channel.html#a6dc89f25a8fcee5a8804f31ef061c721" title="Method processing network replies when adding the channel." alt="" coords="233,107,380,133"/>
-<area shape="rect" href="class_channel_parser.html#a3fee8e66e2e9c233ef3711ce0ef3d3bf" title=" " alt="" coords="887,132,1023,159"/>
+<area shape="rect" href="class_channel_parser.html#a3fee8e66e2e9c233ef3711ce0ef3d3bf" title="Inits internal data structures with default (empty or predefined) data." alt="" coords="887,132,1023,159"/>
 <area shape="rect" href="classadd_channel.html#a6dc3e0683c03ee3eaec7e7b2aa4f6dc6" title="Helper method making sure that appropriate buttons are disabled until input has data in more or less ..." alt="" coords="227,208,387,235"/>
-<area shape="rect" href="class_channel_parser.html#a6a3a5de3d002cb877bc7e9073c871434" title=" " alt="" coords="435,5,644,32"/>
-<area shape="rect" href="class_channel_parser.html#aa2d24e286b4f6e866b6473efb9201db7" title=" " alt="" coords="443,56,635,83"/>
-<area shape="rect" href="class_channel_parser.html#a98b0f031bba1457e8b323b03ae69d6a4" title=" " alt="" coords="449,107,629,133"/>
-<area shape="rect" href="class_channel_parser.html#a1ad2a6444b0ec7bb727e4b4207649ff2" title=" " alt="" coords="692,107,839,133"/>
+<area shape="rect" href="class_channel_parser.html#a6a3a5de3d002cb877bc7e9073c871434" title="Getter method for parsed info about RSS channel." alt="" coords="435,5,644,32"/>
+<area shape="rect" href="class_channel_parser.html#aa2d24e286b4f6e866b6473efb9201db7" title="Getter method returning list of entries in the RSS channel." alt="" coords="443,56,635,83"/>
+<area shape="rect" href="class_channel_parser.html#a98b0f031bba1457e8b323b03ae69d6a4" title="Method parsing data raw XML data returned from the server." alt="" coords="449,107,629,133"/>
+<area shape="rect" href="class_channel_parser.html#a1ad2a6444b0ec7bb727e4b4207649ff2" title="Clears internal data structures from any data." alt="" coords="692,107,839,133"/>
 </map>
 </div>
 
@@ -288,7 +288,7 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadd_channel_afabb6599ae9db1067e636e297ec8a63c_icgraph.png" border="0" usemap="#aclassadd_channel_afabb6599ae9db1067e636e297ec8a63c_icgraph" alt=""/></div>
-<map name="classadd_channel_afabb6599ae9db1067e636e297ec8a63c_icgraph" id="aclassadd_channel_afabb6599ae9db1067e636e297ec8a63c_icgraph">
+<map name="classadd_channel_afabb6599ae9db1067e636e297ec8a63c_icgraph" id="classadd_channel_afabb6599ae9db1067e636e297ec8a63c_icgraph">
 <area shape="rect" title="Method sending GET request asking for RSS channel info and data." alt="" coords="227,5,351,32"/>
 <area shape="rect" href="classadd_channel.html#a3db283c72d62efabb197eb4430a48e7d" title="generic constructor. Inits the view." alt="" coords="5,5,179,32"/>
 </map>
@@ -337,20 +337,20 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_cgraph.png" border="0" usemap="#aclassadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_cgraph" alt=""/></div>
-<map name="classadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_cgraph" id="aclassadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_cgraph">
+<map name="classadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_cgraph" id="classadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_cgraph">
 <area shape="rect" title="Method processing network replies when adding the channel." alt="" coords="5,56,152,83"/>
-<area shape="rect" href="class_channel_parser.html#a6a3a5de3d002cb877bc7e9073c871434" title=" " alt="" coords="200,5,409,32"/>
-<area shape="rect" href="class_channel_parser.html#aa2d24e286b4f6e866b6473efb9201db7" title=" " alt="" coords="209,56,401,83"/>
-<area shape="rect" href="class_channel_parser.html#a98b0f031bba1457e8b323b03ae69d6a4" title=" " alt="" coords="215,107,395,133"/>
-<area shape="rect" href="class_channel_parser.html#a1ad2a6444b0ec7bb727e4b4207649ff2" title=" " alt="" coords="457,107,604,133"/>
-<area shape="rect" href="class_channel_parser.html#a3fee8e66e2e9c233ef3711ce0ef3d3bf" title=" " alt="" coords="652,107,788,133"/>
+<area shape="rect" href="class_channel_parser.html#a6a3a5de3d002cb877bc7e9073c871434" title="Getter method for parsed info about RSS channel." alt="" coords="200,5,409,32"/>
+<area shape="rect" href="class_channel_parser.html#aa2d24e286b4f6e866b6473efb9201db7" title="Getter method returning list of entries in the RSS channel." alt="" coords="209,56,401,83"/>
+<area shape="rect" href="class_channel_parser.html#a98b0f031bba1457e8b323b03ae69d6a4" title="Method parsing data raw XML data returned from the server." alt="" coords="215,107,395,133"/>
+<area shape="rect" href="class_channel_parser.html#a1ad2a6444b0ec7bb727e4b4207649ff2" title="Clears internal data structures from any data." alt="" coords="457,107,604,133"/>
+<area shape="rect" href="class_channel_parser.html#a3fee8e66e2e9c233ef3711ce0ef3d3bf" title="Inits internal data structures with default (empty or predefined) data." alt="" coords="652,107,788,133"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_icgraph.png" border="0" usemap="#aclassadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_icgraph" alt=""/></div>
-<map name="classadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_icgraph" id="aclassadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_icgraph">
+<map name="classadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_icgraph" id="classadd_channel_a6dc89f25a8fcee5a8804f31ef061c721_icgraph">
 <area shape="rect" title="Method processing network replies when adding the channel." alt="" coords="227,5,373,32"/>
 <area shape="rect" href="classadd_channel.html#a3db283c72d62efabb197eb4430a48e7d" title="generic constructor. Inits the view." alt="" coords="5,5,179,32"/>
 </map>
@@ -374,8 +374,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Getter method for details of freshly added channel. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_channel_parser_1_1channel_info.html">ChannelParser::channelInfo</a> data set </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_channel_parser_1_1channel_info.html">ChannelParser::channelInfo</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_channel_parser_1_1channel_info.html" title="General info about the channel being added as parsed from XML (fields as per RFC)">ChannelParser::channelInfo</a> data set </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_channel_parser_1_1channel_info.html" title="General info about the channel being added as parsed from XML (fields as per RFC)">ChannelParser::channelInfo</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="addchannel_8cpp_source.html#l00060">60</a> of file <a class="el" href="addchannel_8cpp_source.html">addchannel.cpp</a>.</p>
 
@@ -386,7 +386,7 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadd_channel_abcb70696760597b9e7d813bbc6cf4015_icgraph.png" border="0" usemap="#aclassadd_channel_abcb70696760597b9e7d813bbc6cf4015_icgraph" alt=""/></div>
-<map name="classadd_channel_abcb70696760597b9e7d813bbc6cf4015_icgraph" id="aclassadd_channel_abcb70696760597b9e7d813bbc6cf4015_icgraph">
+<map name="classadd_channel_abcb70696760597b9e7d813bbc6cf4015_icgraph" id="classadd_channel_abcb70696760597b9e7d813bbc6cf4015_icgraph">
 <area shape="rect" title="Getter method for details of freshly added channel." alt="" coords="461,5,653,32"/>
 <area shape="rect" href="class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title=" " alt="" coords="236,5,413,32"/>
 <area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
@@ -411,8 +411,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Getter method for items from the freshly added channel. </p>
-<dl class="section return"><dt>Returns</dt><dd>Vector with <a class="el" href="struct_channel_parser_1_1item_info.html">ChannelParser::itemInfo</a> data or empty QVector </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_channel_parser_1_1item_info.html">ChannelParser::itemInfo</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector with <a class="el" href="struct_channel_parser_1_1item_info.html" title="Representaion of a single item from a list returned for given RSS channel.">ChannelParser::itemInfo</a> data or empty QVector </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_channel_parser_1_1item_info.html" title="Representaion of a single item from a list returned for given RSS channel.">ChannelParser::itemInfo</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="addchannel_8cpp_source.html#l00056">56</a> of file <a class="el" href="addchannel_8cpp_source.html">addchannel.cpp</a>.</p>
 
@@ -423,7 +423,7 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadd_channel_ab697a61986b6ef52a96a73385c7daf67_icgraph.png" border="0" usemap="#aclassadd_channel_ab697a61986b6ef52a96a73385c7daf67_icgraph" alt=""/></div>
-<map name="classadd_channel_ab697a61986b6ef52a96a73385c7daf67_icgraph" id="aclassadd_channel_ab697a61986b6ef52a96a73385c7daf67_icgraph">
+<map name="classadd_channel_ab697a61986b6ef52a96a73385c7daf67_icgraph" id="classadd_channel_ab697a61986b6ef52a96a73385c7daf67_icgraph">
 <area shape="rect" title="Getter method for items from the freshly added channel." alt="" coords="461,5,664,32"/>
 <area shape="rect" href="class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title=" " alt="" coords="236,5,413,32"/>
 <area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
@@ -490,7 +490,7 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadd_channel_a6dc3e0683c03ee3eaec7e7b2aa4f6dc6_icgraph.png" border="0" usemap="#aclassadd_channel_a6dc3e0683c03ee3eaec7e7b2aa4f6dc6_icgraph" alt=""/></div>
-<map name="classadd_channel_a6dc3e0683c03ee3eaec7e7b2aa4f6dc6_icgraph" id="aclassadd_channel_a6dc3e0683c03ee3eaec7e7b2aa4f6dc6_icgraph">
+<map name="classadd_channel_a6dc3e0683c03ee3eaec7e7b2aa4f6dc6_icgraph" id="classadd_channel_a6dc3e0683c03ee3eaec7e7b2aa4f6dc6_icgraph">
 <area shape="rect" title="Helper method making sure that appropriate buttons are disabled until input has data in more or less ..." alt="" coords="227,5,387,32"/>
 <area shape="rect" href="classadd_channel.html#a3db283c72d62efabb197eb4430a48e7d" title="generic constructor. Inits the view." alt="" coords="5,5,179,32"/>
 </map>
@@ -520,7 +520,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Structure with channel info data. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_channel_parser_1_1channel_info.html">ChannelParser::channelInfo</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_channel_parser_1_1channel_info.html" title="General info about the channel being added as parsed from XML (fields as per RFC)">ChannelParser::channelInfo</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="addchannel_8h_source.html#l00049">49</a> of file <a class="el" href="addchannel_8h_source.html">addchannel.h</a>.</p>
 
@@ -549,7 +549,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Vector holding last retrieved items from the channel. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_channel_parser_1_1item_info.html">ChannelParser::itemInfo</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_channel_parser_1_1item_info.html" title="Representaion of a single item from a list returned for given RSS channel.">ChannelParser::itemInfo</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="addchannel_8h_source.html#l00048">48</a> of file <a class="el" href="addchannel_8h_source.html">addchannel.h</a>.</p>
 
@@ -679,7 +679,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classadd_channel.html">addChannel</a></li>
-    <li class="footer">Generated on Wed Sep 30 2020 16:20:58 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Thu Oct 1 2020 15:32:53 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

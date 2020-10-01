@@ -1,5 +1,5 @@
 <map id="ChannelParser::getChannelInfo" name="ChannelParser::getChannelInfo">
-<area shape="rect" id="node1" title=" " alt="" coords="421,5,631,32"/>
+<area shape="rect" id="node1" title="Getter method for parsed info about RSS channel." alt="" coords="421,5,631,32"/>
 <area shape="rect" id="node2" href="$classadd_channel.html#a6dc89f25a8fcee5a8804f31ef061c721" title="Method processing network replies when adding the channel." alt="" coords="227,5,373,32"/>
 <area shape="rect" id="node3" href="$classadd_channel.html#a3db283c72d62efabb197eb4430a48e7d" title="generic constructor. Inits the view." alt="" coords="5,5,179,32"/>
 </map>

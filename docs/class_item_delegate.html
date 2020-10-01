@@ -91,13 +91,16 @@ $(document).ready(function(){initNavTree('class_item_delegate.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
+<p>Class is responsible for drawing a star when the given item is marked as bookmarked.  
+ <a href="class_item_delegate.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="itemdelegate_8h_source.html">itemdelegate.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ItemDelegate:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_item_delegate__inherit__graph.png" border="0" usemap="#a_item_delegate_inherit__map" alt="Inheritance graph"/></div>
 <map name="_item_delegate_inherit__map" id="a_item_delegate_inherit__map">
-<area shape="rect" title=" " alt="" coords="29,80,131,107"/>
+<area shape="rect" title="Class is responsible for drawing a star when the given item is marked as bookmarked." alt="" coords="29,80,131,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,155,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -106,7 +109,7 @@ Collaboration diagram for ItemDelegate:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_item_delegate__coll__graph.png" border="0" usemap="#a_item_delegate_coll__map" alt="Collaboration graph"/></div>
 <map name="_item_delegate_coll__map" id="a_item_delegate_coll__map">
-<area shape="rect" title=" " alt="" coords="29,80,131,107"/>
+<area shape="rect" title="Class is responsible for drawing a star when the given item is marked as bookmarked." alt="" coords="29,80,131,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,155,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -114,13 +117,16 @@ Collaboration diagram for ItemDelegate:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aedf98e95280ffad1606d1cef1da75555"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_delegate.html#aedf98e95280ffad1606d1cef1da75555">ItemDelegate</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:aedf98e95280ffad1606d1cef1da75555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor.  <a href="class_item_delegate.html#aedf98e95280ffad1606d1cef1da75555">More...</a><br /></td></tr>
 <tr class="separator:aedf98e95280ffad1606d1cef1da75555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1272999415b444e240127a5a0707275"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_delegate.html#ab1272999415b444e240127a5a0707275">paint</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:ab1272999415b444e240127a5a0707275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method painting actual star depending on the value of the flag.  <a href="class_item_delegate.html#ab1272999415b444e240127a5a0707275">More...</a><br /></td></tr>
 <tr class="separator:ab1272999415b444e240127a5a0707275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="itemdelegate_8h_source.html#l00009">9</a> of file <a class="el" href="itemdelegate_8h_source.html">itemdelegate.h</a>.</p>
+<div class="textblock"><p>Class is responsible for drawing a star when the given item is marked as bookmarked. </p>
+
+<p class="definition">Definition at line <a class="el" href="itemdelegate_8h_source.html#l00011">11</a> of file <a class="el" href="itemdelegate_8h_source.html">itemdelegate.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aedf98e95280ffad1606d1cef1da75555"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedf98e95280ffad1606d1cef1da75555">&#9670;&nbsp;</a></span>ItemDelegate()</h2>
@@ -145,6 +151,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Generic constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Optional parent object pointer or nullptr </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="itemdelegate_8cpp_source.html#l00003">3</a> of file <a class="el" href="itemdelegate_8cpp_source.html">itemdelegate.cpp</a>.</p>
 
@@ -183,6 +197,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Method painting actual star depending on the value of the flag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td>Painter devices on which painting will be done </td></tr>
+    <tr><td class="paramname">option</td><td>Style option reference for painting process </td></tr>
+    <tr><td class="paramname">index</td><td>Index of the item that should be painted </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="itemdelegate_8cpp_source.html#l00005">5</a> of file <a class="el" href="itemdelegate_8cpp_source.html">itemdelegate.cpp</a>.</p>
 
 </div>
@@ -197,7 +221,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_item_delegate.html">ItemDelegate</a></li>
-    <li class="footer">Generated on Wed Sep 30 2020 16:20:58 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Thu Oct 1 2020 15:32:53 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

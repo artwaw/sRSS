@@ -1,4 +1,4 @@
 <map id="ItemDelegate" name="ItemDelegate">
-<area shape="rect" id="node1" title=" " alt="" coords="29,80,131,107"/>
+<area shape="rect" id="node1" title="Class is responsible for drawing a star when the given item is marked as bookmarked." alt="" coords="29,80,131,107"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,155,32"/>
 </map>

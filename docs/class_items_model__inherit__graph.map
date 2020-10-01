@@ -1,4 +1,4 @@
 <map id="ItemsModel" name="ItemsModel">
-<area shape="rect" id="node1" title=" " alt="" coords="21,80,111,107"/>
+<area shape="rect" id="node1" title="Simple QSqlTableModel descendant providing data for the items table view." alt="" coords="21,80,111,107"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,127,32"/>
 </map>

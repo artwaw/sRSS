@@ -1,4 +1,4 @@
 <map id="ChannelParser::itemInfo" name="ChannelParser::itemInfo">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,171,121"/>
-<area shape="rect" id="node2" href="$struct_channel_parser_1_1encl.html" title=" " alt="" coords="17,5,159,32"/>
+<area shape="rect" id="node1" title="Representaion of a single item from a list returned for given RSS channel." alt="" coords="5,95,171,121"/>
+<area shape="rect" id="node2" href="$struct_channel_parser_1_1encl.html" title="Enclosure structure as a possible part of item returned for the given RSS channel." alt="" coords="17,5,159,32"/>
 </map>

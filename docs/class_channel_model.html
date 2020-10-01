@@ -92,13 +92,16 @@ $(document).ready(function(){initNavTree('class_channel_model.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
+<p>Simple QSqlTableModel descendant providing data for the list of channels.  
+ <a href="class_channel_model.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="channelmodel_8h_source.html">channelmodel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ChannelModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_channel_model__inherit__graph.png" border="0" usemap="#a_channel_model_inherit__map" alt="Inheritance graph"/></div>
-<map name="_channel_model_inherit__map" id="a_channel_model_inherit__map">
-<area shape="rect" title=" " alt="" coords="12,80,120,107"/>
+<map name="_channel_model_inherit__map" id="_channel_model_inherit__map">
+<area shape="rect" title="Simple QSqlTableModel descendant providing data for the list of channels." alt="" coords="12,80,120,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,127,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -106,8 +109,8 @@ Inheritance diagram for ChannelModel:</div>
 Collaboration diagram for ChannelModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_channel_model__coll__graph.png" border="0" usemap="#a_channel_model_coll__map" alt="Collaboration graph"/></div>
-<map name="_channel_model_coll__map" id="a_channel_model_coll__map">
-<area shape="rect" title=" " alt="" coords="12,80,120,107"/>
+<map name="_channel_model_coll__map" id="_channel_model_coll__map">
+<area shape="rect" title="Simple QSqlTableModel descendant providing data for the list of channels." alt="" coords="12,80,120,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,127,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -115,20 +118,25 @@ Collaboration diagram for ChannelModel:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a2bc2481279870780fc3333c95839ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_model.html#a2a2bc2481279870780fc3333c95839ee">ChannelModel</a> (QObject *parent=nullptr, QSqlDatabase db=QSqlDatabase())</td></tr>
+<tr class="memdesc:a2a2bc2481279870780fc3333c95839ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor.  <a href="class_channel_model.html#a2a2bc2481279870780fc3333c95839ee">More...</a><br /></td></tr>
 <tr class="separator:a2a2bc2481279870780fc3333c95839ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86acf07b26ecd6647d204f3b3b3ad6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e">select</a> () override</td></tr>
+<tr class="memdesc:ac86acf07b26ecd6647d204f3b3b3ad6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple override of generic <a class="el" href="class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title="Simple override of generic select() with lazy model population off.">select()</a> with lazy model population off.  <a href="class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e">More...</a><br /></td></tr>
 <tr class="separator:ac86acf07b26ecd6647d204f3b3b3ad6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13b5af5cbd862511f617c43a1bd755a"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_model.html#aa13b5af5cbd862511f617c43a1bd755a">data</a> (const QModelIndex &amp;idx, int role=Qt::DisplayRole) const override</td></tr>
+<tr class="memdesc:aa13b5af5cbd862511f617c43a1bd755a"><td class="mdescLeft">&#160;</td><td class="mdescRight">QSqlTableModel::data() override. Returns proper tooltips and icons.  <a href="class_channel_model.html#aa13b5af5cbd862511f617c43a1bd755a">More...</a><br /></td></tr>
 <tr class="separator:aa13b5af5cbd862511f617c43a1bd755a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa449949ba24a92171f160feea303bc87"><td class="memItemLeft" align="right" valign="top">QSettings&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_model.html#aa449949ba24a92171f160feea303bc87">settings</a></td></tr>
+<tr class="memdesc:aa449949ba24a92171f160feea303bc87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local access to program wide settings.  <a href="class_channel_model.html#aa449949ba24a92171f160feea303bc87">More...</a><br /></td></tr>
 <tr class="separator:aa449949ba24a92171f160feea303bc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="channelmodel_8h_source.html#l00010">10</a> of file <a class="el" href="channelmodel_8h_source.html">channelmodel.h</a>.</p>
+<div class="textblock"><p>Simple QSqlTableModel descendant providing data for the list of channels. </p>
+
+<p class="definition">Definition at line <a class="el" href="channelmodel_8h_source.html#l00012">12</a> of file <a class="el" href="channelmodel_8h_source.html">channelmodel.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2a2bc2481279870780fc3333c95839ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a2bc2481279870780fc3333c95839ee">&#9670;&nbsp;</a></span>ChannelModel()</h2>
@@ -155,6 +163,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Generic constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Optional parent object or nullptr </td></tr>
+    <tr><td class="paramname">db</td><td>Database instance </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="channelmodel_8cpp_source.html#l00003">3</a> of file <a class="el" href="channelmodel_8cpp_source.html">channelmodel.cpp</a>.</p>
 
@@ -195,9 +212,37 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>QSqlTableModel::data() override. Returns proper tooltips and icons. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>Index of the data from model </td></tr>
+    <tr><td class="paramname">role</td><td>Role of the data that index is pointing to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>QVariant with data or empty QVariant() if data not available </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="channelmodel_8cpp_source.html#l00016">16</a> of file <a class="el" href="channelmodel_8cpp_source.html">channelmodel.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="channelmodel_8h_source.html#l00019">settings</a>.</p>
+<p class="reference">References <a class="el" href="channelmodel_8cpp_source.html#l00016">data()</a>, and <a class="el" href="channelmodel_8h_source.html#l00032">settings</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="channelmodel_8cpp_source.html#l00016">data()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_channel_model_aa13b5af5cbd862511f617c43a1bd755a_cgraph.png" border="0" usemap="#aclass_channel_model_aa13b5af5cbd862511f617c43a1bd755a_cgraph" alt=""/></div>
+<map name="class_channel_model_aa13b5af5cbd862511f617c43a1bd755a_cgraph" id="class_channel_model_aa13b5af5cbd862511f617c43a1bd755a_cgraph">
+<area shape="rect" title="QSqlTableModel::data() override. Returns proper tooltips and icons." alt="" coords="5,29,147,56"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_channel_model_aa13b5af5cbd862511f617c43a1bd755a_icgraph.png" border="0" usemap="#aclass_channel_model_aa13b5af5cbd862511f617c43a1bd755a_icgraph" alt=""/></div>
+<map name="class_channel_model_aa13b5af5cbd862511f617c43a1bd755a_icgraph" id="class_channel_model_aa13b5af5cbd862511f617c43a1bd755a_icgraph">
+<area shape="rect" title="QSqlTableModel::data() override. Returns proper tooltips and icons." alt="" coords="5,29,147,56"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -224,6 +269,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Simple override of generic <a class="el" href="class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title="Simple override of generic select() with lazy model population off.">select()</a> with lazy model population off. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if model is successfuly populated </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="channelmodel_8cpp_source.html#l00005">5</a> of file <a class="el" href="channelmodel_8cpp_source.html">channelmodel.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00148">MainWindow::addChannel()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00114">MainWindow::initChannels()</a>.</p>
@@ -231,8 +279,8 @@ Private Attributes</h2></td></tr>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_channel_model_ac86acf07b26ecd6647d204f3b3b3ad6e_icgraph.png" border="0" usemap="#aclass_channel_model_ac86acf07b26ecd6647d204f3b3b3ad6e_icgraph" alt=""/></div>
-<map name="class_channel_model_ac86acf07b26ecd6647d204f3b3b3ad6e_icgraph" id="aclass_channel_model_ac86acf07b26ecd6647d204f3b3b3ad6e_icgraph">
-<area shape="rect" title=" " alt="" coords="463,31,613,57"/>
+<map name="class_channel_model_ac86acf07b26ecd6647d204f3b3b3ad6e_icgraph" id="class_channel_model_ac86acf07b26ecd6647d204f3b3b3ad6e_icgraph">
+<area shape="rect" title="Simple override of generic select() with lazy model population off." alt="" coords="463,31,613,57"/>
 <area shape="rect" href="class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title=" " alt="" coords="237,5,414,32"/>
 <area shape="rect" href="class_main_window.html#a785a675534a443aa0e6b79f53de7ade3" title=" " alt="" coords="236,56,415,83"/>
 <area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,31,188,57"/>
@@ -262,7 +310,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="channelmodel_8h_source.html#l00019">19</a> of file <a class="el" href="channelmodel_8h_source.html">channelmodel.h</a>.</p>
+<p>Local access to program wide settings. </p>
+
+<p class="definition">Definition at line <a class="el" href="channelmodel_8h_source.html#l00032">32</a> of file <a class="el" href="channelmodel_8h_source.html">channelmodel.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="channelmodel_8cpp_source.html#l00016">data()</a>.</p>
 
@@ -278,7 +328,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_channel_model.html">ChannelModel</a></li>
-    <li class="footer">Generated on Wed Sep 30 2020 16:20:58 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Thu Oct 1 2020 15:32:53 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

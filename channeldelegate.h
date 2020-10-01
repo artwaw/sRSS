@@ -6,7 +6,7 @@
 #include <QPainter>
 
 /*! \class ChannelDelegate
- * \brief Class is responsible for drawing a star when the given item is marked as bookmarked */
+ * \brief Class is responsible for styling each of the items in the channel list */
 class ChannelDelegate : public QStyledItemDelegate
 {
     Q_OBJECT
@@ -15,7 +15,7 @@ public:
      * \param parent Optional parent object pointer or nullptr */
     ChannelDelegate(QObject *parent=nullptr);
 
-    /*! \brief Method painting actual star depending on the value of the flag
+    /*! \brief Method painting actual item, with all the decorations etc
      * \param painter Painter devices on which painting will be done
      * \param option Style option reference for painting process
      * \param index Index of the item that should be painted */

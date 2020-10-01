@@ -1,8 +1,8 @@
 <map id="ChannelParser::init" name="ChannelParser::init">
-<area shape="rect" id="node1" title=" " alt="" coords="904,31,1040,58"/>
+<area shape="rect" id="node1" title="Inits internal data structures with default (empty or predefined) data." alt="" coords="904,31,1040,58"/>
 <area shape="rect" id="node2" href="$classadd_channel.html#a3db283c72d62efabb197eb4430a48e7d" title="generic constructor. Inits the view." alt="" coords="5,18,179,45"/>
-<area shape="rect" id="node3" href="$class_channel_parser.html#a55eff105946a980b717dac92dc00d487" title=" " alt="" coords="649,31,856,58"/>
-<area shape="rect" id="node4" href="$class_channel_parser.html#a1ad2a6444b0ec7bb727e4b4207649ff2" title=" " alt="" coords="679,82,826,109"/>
-<area shape="rect" id="node5" href="$class_channel_parser.html#a98b0f031bba1457e8b323b03ae69d6a4" title=" " alt="" coords="421,69,601,95"/>
+<area shape="rect" id="node3" href="$class_channel_parser.html#a55eff105946a980b717dac92dc00d487" title="Generic constructor. Calls init() to set initial values." alt="" coords="649,31,856,58"/>
+<area shape="rect" id="node4" href="$class_channel_parser.html#a1ad2a6444b0ec7bb727e4b4207649ff2" title="Clears internal data structures from any data." alt="" coords="679,82,826,109"/>
+<area shape="rect" id="node5" href="$class_channel_parser.html#a98b0f031bba1457e8b323b03ae69d6a4" title="Method parsing data raw XML data returned from the server." alt="" coords="421,69,601,95"/>
 <area shape="rect" id="node6" href="$classadd_channel.html#a6dc89f25a8fcee5a8804f31ef061c721" title="Method processing network replies when adding the channel." alt="" coords="227,43,373,70"/>
 </map>

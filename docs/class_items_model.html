@@ -91,13 +91,16 @@ $(document).ready(function(){initNavTree('class_items_model.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
+<p>Simple QSqlTableModel descendant providing data for the items table view.  
+ <a href="class_items_model.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="itemsmodel_8h_source.html">itemsmodel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ItemsModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_items_model__inherit__graph.png" border="0" usemap="#a_items_model_inherit__map" alt="Inheritance graph"/></div>
 <map name="_items_model_inherit__map" id="a_items_model_inherit__map">
-<area shape="rect" title=" " alt="" coords="21,80,111,107"/>
+<area shape="rect" title="Simple QSqlTableModel descendant providing data for the items table view." alt="" coords="21,80,111,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,127,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -106,7 +109,7 @@ Collaboration diagram for ItemsModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_items_model__coll__graph.png" border="0" usemap="#a_items_model_coll__map" alt="Collaboration graph"/></div>
 <map name="_items_model_coll__map" id="a_items_model_coll__map">
-<area shape="rect" title=" " alt="" coords="21,80,111,107"/>
+<area shape="rect" title="Simple QSqlTableModel descendant providing data for the items table view." alt="" coords="21,80,111,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,127,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -114,15 +117,19 @@ Collaboration diagram for ItemsModel:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2c18bf08537023bf4b2f864b438c875f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_items_model.html#a2c18bf08537023bf4b2f864b438c875f">ItemsModel</a> (QObject *parent=nullptr, QSqlDatabase db=QSqlDatabase())</td></tr>
+<tr class="memdesc:a2c18bf08537023bf4b2f864b438c875f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor.  <a href="class_items_model.html#a2c18bf08537023bf4b2f864b438c875f">More...</a><br /></td></tr>
 <tr class="separator:a2c18bf08537023bf4b2f864b438c875f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9235e92a13a1104355927c87b77eb1d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_items_model.html#a9235e92a13a1104355927c87b77eb1d0">select</a> () override</td></tr>
+<tr class="memdesc:a9235e92a13a1104355927c87b77eb1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple override of generic <a class="el" href="class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off.">select()</a> with lazy model population off.  <a href="class_items_model.html#a9235e92a13a1104355927c87b77eb1d0">More...</a><br /></td></tr>
 <tr class="separator:a9235e92a13a1104355927c87b77eb1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e75f95544e67602bd3e48a437bc316"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_items_model.html#a10e75f95544e67602bd3e48a437bc316">data</a> (const QModelIndex &amp;idx, int role=Qt::DisplayRole) const override</td></tr>
+<tr class="memdesc:a10e75f95544e67602bd3e48a437bc316"><td class="mdescLeft">&#160;</td><td class="mdescRight">QSqlTableModel::data() override. Removes HTML from descriptions.  <a href="class_items_model.html#a10e75f95544e67602bd3e48a437bc316">More...</a><br /></td></tr>
 <tr class="separator:a10e75f95544e67602bd3e48a437bc316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="itemsmodel_8h_source.html#l00010">10</a> of file <a class="el" href="itemsmodel_8h_source.html">itemsmodel.h</a>.</p>
+<div class="textblock"><p>Simple QSqlTableModel descendant providing data for the items table view. </p>
+
+<p class="definition">Definition at line <a class="el" href="itemsmodel_8h_source.html#l00012">12</a> of file <a class="el" href="itemsmodel_8h_source.html">itemsmodel.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2c18bf08537023bf4b2f864b438c875f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c18bf08537023bf4b2f864b438c875f">&#9670;&nbsp;</a></span>ItemsModel()</h2>
@@ -149,6 +156,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Generic constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Optional parent object or nullptr </td></tr>
+    <tr><td class="paramname">db</td><td>Database instance </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="itemsmodel_8cpp_source.html#l00003">3</a> of file <a class="el" href="itemsmodel_8cpp_source.html">itemsmodel.cpp</a>.</p>
 
@@ -189,6 +205,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>QSqlTableModel::data() override. Removes HTML from descriptions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>Index of the data from model </td></tr>
+    <tr><td class="paramname">role</td><td>Role of the data that index is pointing to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>QVariant with data or empty QVariant() if data not available </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="itemsmodel_8cpp_source.html#l00016">16</a> of file <a class="el" href="itemsmodel_8cpp_source.html">itemsmodel.cpp</a>.</p>
 
 </div>
@@ -216,6 +242,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Simple override of generic <a class="el" href="class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off.">select()</a> with lazy model population off. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if model is successfuly populated </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="itemsmodel_8cpp_source.html#l00005">5</a> of file <a class="el" href="itemsmodel_8cpp_source.html">itemsmodel.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00148">MainWindow::addChannel()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00193">MainWindow::initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00325">MainWindow::onItemLoad()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00313">MainWindow::starItem()</a>.</p>
@@ -224,7 +253,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_items_model_a9235e92a13a1104355927c87b77eb1d0_icgraph.png" border="0" usemap="#aclass_items_model_a9235e92a13a1104355927c87b77eb1d0_icgraph" alt=""/></div>
 <map name="class_items_model_a9235e92a13a1104355927c87b77eb1d0_icgraph" id="aclass_items_model_a9235e92a13a1104355927c87b77eb1d0_icgraph">
-<area shape="rect" title=" " alt="" coords="685,68,819,95"/>
+<area shape="rect" title="Simple override of generic select() with lazy model population off." alt="" coords="685,68,819,95"/>
 <area shape="rect" href="class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title=" " alt="" coords="236,5,413,32"/>
 <area shape="rect" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="247,68,403,95"/>
 <area shape="rect" href="class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67" title=" " alt="" coords="461,93,637,120"/>
@@ -245,7 +274,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_items_model.html">ItemsModel</a></li>
-    <li class="footer">Generated on Wed Sep 30 2020 16:20:58 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Thu Oct 1 2020 15:32:53 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

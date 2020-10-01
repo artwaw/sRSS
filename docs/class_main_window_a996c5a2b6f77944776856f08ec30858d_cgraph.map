@@ -11,8 +11,8 @@
 <area shape="rect" id="node23" href="$class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="247,695,405,722"/>
 <area shape="rect" id="node3" href="$classadd_channel.html#abcb70696760597b9e7d813bbc6cf4015" title="Getter method for details of freshly added channel." alt="" coords="472,173,664,199"/>
 <area shape="rect" id="node4" href="$classadd_channel.html#ab697a61986b6ef52a96a73385c7daf67" title="Getter method for items from the freshly added channel." alt="" coords="467,223,669,250"/>
-<area shape="rect" id="node5" href="$class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title=" " alt="" coords="493,71,643,98"/>
-<area shape="rect" id="node6" href="$class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title=" " alt="" coords="757,350,891,377"/>
+<area shape="rect" id="node5" href="$class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title="Simple override of generic select() with lazy model population off." alt="" coords="493,71,643,98"/>
+<area shape="rect" id="node6" href="$class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off." alt="" coords="757,350,891,377"/>
 <area shape="rect" id="node8" href="$class_main_window.html#abb30531afee763d0586ee6323fd332e2" title=" " alt="" coords="477,645,659,671"/>
 <area shape="rect" id="node12" href="$class_main_window.html#a5d2db4b1975b390fd9a78bc3ab8340a7" title=" " alt="" coords="474,5,662,47"/>
 <area shape="rect" id="node13" href="$class_main_window.html#a5c4520dbb20f711ce38c6d3973e4f679" title=" " alt="" coords="725,5,923,47"/>

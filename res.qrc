@@ -2,6 +2,7 @@
     <qresource prefix="/lang"/>
     <qresource prefix="/sql">
         <file>itemschema.sql</file>
+        <file>channelschema.sql</file>
     </qresource>
     <qresource prefix="/">
         <file>gfx/cog-double-2.png</file>
@@ -30,5 +31,7 @@
         <file>gfx/share.png</file>
         <file>gfx/infomation-circle.png</file>
         <file>gfx/hbookmark.png</file>
+        <file>sRSS_en_GB.qm</file>
+        <file>sRSS_pl_PL.qm</file>
     </qresource>
 </RCC>

@@ -6,7 +6,7 @@
 #include <QPainter>
 
 /*! \class ChannelDelegate
- * \brief Class is responsible for styling each of the items in the channel list */
+ * \brief Class is responsible for styling each of the items in the channel list. */
 class ChannelDelegate : public QStyledItemDelegate
 {
     Q_OBJECT

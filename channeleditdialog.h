@@ -10,7 +10,7 @@ class channelEditDialog;
 }
 
 /*! \class channelEditDialog
- * \brief Simple editor of properties of RSS channel as a modal dialog */
+ * \brief Simple editor of properties of RSS channel as a modal dialog. */
 class channelEditDialog : public QDialog
 {
     Q_OBJECT

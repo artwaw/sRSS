@@ -56,7 +56,8 @@ FORMS += \
     optiondlg.ui
 
 TRANSLATIONS += \
-    sRSS_en_GB.ts
+    sRSS_en_GB.ts \
+    sRSS_pl_PL.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -69,7 +70,8 @@ DISTFILES += \
     README.md \
     channelschema.sql \
     itemschema.sql \
-    lic_template
+    lic_template \
+    sRSS_pl_PL.ts
 
 RESOURCES += \
     res.qrc

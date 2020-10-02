@@ -30,10 +30,10 @@ void ChannelParser::init() {
     channel.image.height=31;
     channel.skipHours.clear();
     channel.skipHours.reserve(24);
-    channel.skipHours.fill(true);
+    channel.skipHours.fill(false);
     channel.skipDays.clear();
     channel.skipDays.reserve(7);
-    channel.skipDays.fill(true);
+    channel.skipDays.fill(false);
     items.clear();
     errorStr=tr("No error");
 }
@@ -69,7 +69,21 @@ bool ChannelParser::parseData(QByteArray &data) {
     channel.generator = hook.firstChildElement("generator").toElement().text();
     channel.docs.setUrl(hook.firstChildElement("docs").toElement().text());
     channel.ttl = hook.firstChildElement("ttl").toElement().text().toInt();
-    QDomNode item = hook.firstChildElement("item");
+    QDomNode item;
+    if (!hook.firstChildElement("skipHours").toElement().text().isEmpty()) {
+        item = hook.firstChildElement("hour");
+        while (!item.nextSibling().isNull()) {
+            channel.skipHours[item.toElement().text().toInt()]=true;
+        }
+    }
+    if (!hook.firstChildElement("skipDays").toElement().text().isEmpty()) {
+        item = hook.firstChildElement("day");
+        QMap<QString,int> days; days.insert("Monday",1); days.insert("Tuesday",2); days.insert("Wednesday",3); days.insert("Thursday",4); days.insert("Friday",5); days.insert("Saturday",6); days.insert("Sunday",7);
+        while (!item.nextSibling().isNull()) {
+            channel.skipDays[days.value(item.toElement().text())]=true;
+        }
+    }
+    item = hook.firstChildElement("item");
     itemInfo info;
     while (!item.nextSibling().isNull()) {
         info.title = item.firstChildElement("title").toElement().text();

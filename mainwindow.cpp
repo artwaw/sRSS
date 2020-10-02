@@ -28,8 +28,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     loadSettings();
     connect(ui->action_Quit,&QAction::triggered,this,&MainWindow::closeApp);
     connect(ui->action_Add,&QAction::triggered,this,&MainWindow::addChannel);
+    connect(ui->action_Edit_channel,&QAction::triggered,this,&MainWindow::editChannel);
     initItems();
     initChannels();
+    connect(ui->channelListView->selectionModel(),&QItemSelectionModel::selectionChanged,this,&MainWindow::updateChannelActions);
+    connect(ui->channelListView->selectionModel(),&QItemSelectionModel::modelChanged,this,&MainWindow::updateChannelActions);
+    connect(ui->channelListView,&QListView::clicked,this,&MainWindow::updateChannelActions);
     QProgressBar *statusProgress = new QProgressBar(this);
     statusProgress->setMaximum(100);
     statusProgress->setMinimum(0);
@@ -191,9 +195,6 @@ void MainWindow::addChannel() {
 }
 
 void MainWindow::initItems() {
-// id integer primary key, origin integer not null, title text, link text, description text,
-// author text, category text, comments text, guid text, enclink text, enclen integer, enctype text,
-// pubdate text, star bool);
     items = new ItemsModel(this,QSqlDatabase::database(QSqlDatabase::defaultConnection,true));
     items->setTable("items");
     items->setHeaderData(2,Qt::Horizontal,QVariant(tr("Title")));
@@ -267,6 +268,7 @@ void MainWindow::setupChannelContextMenu() {
     channelContextMenu->addAction(ui->actionRefresh_selected);
     channelContextMenu->addAction(ui->actionR_efresh_all);
     connect(ui->channelListView,&QListView::customContextMenuRequested,this,&MainWindow::channelContextMenuRequested);
+
 }
 
 void MainWindow::itemHeaderMenuRequested(QPoint pos) {
@@ -328,4 +330,29 @@ void MainWindow::onItemLoad(bool ecode) {
     rec.setValue("read",true);
     items->setRecord(itemproxy->mapToSource(ui->itemsView->selectionModel()->currentIndex()).row(),rec);
     items->select();
+}
+
+void MainWindow::editChannel() {
+    if (!ui->channelListView->selectionModel()->hasSelection()) {
+        return;
+    }
+    channelEditDialog editDlg;
+    int row = ui->channelListView->selectionModel()->currentIndex().row();
+    editDlg.setData(channels->record(row));
+    if (editDlg.exec()==QDialog::Accepted) {
+        channels->setRecord(row,editDlg.getData());
+    }
+}
+
+void MainWindow::updateChannelActions() {
+    bool res = (ui->channelListView->selectionModel()->hasSelection()&&(itemproxy->filterKeyColumn()==1));
+    ui->action_Edit_channel->setEnabled(res);
+    ui->action_Remove->setEnabled(res);
+}
+
+void MainWindow::removeChannel() {
+    channelRemoveDialog dlg;
+    if (dlg.exec()==QDialog::Accepted) {
+        //remove entries
+    }
 }

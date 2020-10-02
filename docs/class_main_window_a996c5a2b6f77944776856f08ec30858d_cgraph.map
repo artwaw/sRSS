@@ -1,27 +1,32 @@
 <map id="MainWindow::MainWindow" name="MainWindow::MainWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="5,645,188,671"/>
-<area shape="rect" id="node2" href="$class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title=" " alt="" coords="237,173,415,199"/>
-<area shape="rect" id="node7" href="$class_main_window.html#aaa567a50ce7194fc11d55b0b06a43dd1" title=" " alt="" coords="246,594,406,621"/>
-<area shape="rect" id="node9" href="$class_cache_class.html#a529bfa1dcfff3f124815b544854a1f1f" title="Method returning pointer to internal disk cache object." alt="" coords="247,746,405,773"/>
-<area shape="rect" id="node10" href="$class_cache_class.html#a138f49e4b0a05f792f266e49a0f9c9ca" title="Method returning pointer to internal cookie jar object." alt="" coords="236,797,416,823"/>
-<area shape="rect" id="node11" href="$class_main_window.html#a785a675534a443aa0e6b79f53de7ade3" title=" " alt="" coords="237,71,415,98"/>
-<area shape="rect" id="node14" href="$class_main_window.html#a6414051d72dd212134e879b9b13c44b9" title=" " alt="" coords="497,695,639,722"/>
-<area shape="rect" id="node15" href="$class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="248,451,404,478"/>
-<area shape="rect" id="node22" href="$class_main_window.html#a9bb1f3b7f6b5360abfd2dc01fc1c8930" title=" " alt="" coords="237,847,415,874"/>
-<area shape="rect" id="node23" href="$class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="247,695,405,722"/>
-<area shape="rect" id="node3" href="$classadd_channel.html#abcb70696760597b9e7d813bbc6cf4015" title="Getter method for details of freshly added channel." alt="" coords="472,173,664,199"/>
-<area shape="rect" id="node4" href="$classadd_channel.html#ab697a61986b6ef52a96a73385c7daf67" title="Getter method for items from the freshly added channel." alt="" coords="467,223,669,250"/>
-<area shape="rect" id="node5" href="$class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title="Simple override of generic select() with lazy model population off." alt="" coords="493,71,643,98"/>
-<area shape="rect" id="node6" href="$class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off." alt="" coords="757,350,891,377"/>
-<area shape="rect" id="node8" href="$class_main_window.html#abb30531afee763d0586ee6323fd332e2" title=" " alt="" coords="477,645,659,671"/>
-<area shape="rect" id="node12" href="$class_main_window.html#a5d2db4b1975b390fd9a78bc3ab8340a7" title=" " alt="" coords="474,5,662,47"/>
-<area shape="rect" id="node13" href="$class_main_window.html#a5c4520dbb20f711ce38c6d3973e4f679" title=" " alt="" coords="725,5,923,47"/>
-<area shape="rect" id="node16" href="$class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd" title=" " alt="" coords="493,274,643,301"/>
-<area shape="rect" id="node17" href="$class_main_window.html#a3572db0791eefd0369bc679b581f5914" title=" " alt="" coords="720,499,928,540"/>
-<area shape="rect" id="node18" href="$class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67" title=" " alt="" coords="480,325,656,351"/>
-<area shape="rect" id="node19" href="$class_main_window.html#a9feda9728da59eb5ad25a666444b57fc" title=" " alt="" coords="725,565,923,591"/>
-<area shape="rect" id="node20" href="$class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf" title=" " alt="" coords="464,528,672,569"/>
-<area shape="rect" id="node21" href="$class_main_window.html#a49279ad253843874949bd5d14bf69005" title=" " alt="" coords="491,375,645,402"/>
-<area shape="rect" id="node24" href="$class_main_window.html#a98b0cfb00f05f003d5f17edd5470a684" title=" " alt="" coords="483,746,653,773"/>
-<area shape="rect" id="node25" href="$class_main_window.html#a985bdf98220a3c6603a6edeb0bbcd96b" title=" " alt="" coords="507,797,629,823"/>
+<area shape="rect" id="node1" title="Generic constructor that inits the program." alt="" coords="5,747,188,773"/>
+<area shape="rect" id="node2" href="$class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title="Method asks for URL of the new RSS channel, if correct adds the channel and items to the internal db." alt="" coords="245,107,423,133"/>
+<area shape="rect" id="node7" href="$class_main_window.html#aaa567a50ce7194fc11d55b0b06a43dd1" title=" " alt="" coords="254,645,414,672"/>
+<area shape="rect" id="node9" href="$class_main_window.html#a2100f360c1ec8fd5a9eae4b9e87d2cea" title="Displays dialog with edit options for the selected channel." alt="" coords="245,797,423,824"/>
+<area shape="rect" id="node13" href="$class_cache_class.html#a529bfa1dcfff3f124815b544854a1f1f" title="Method returning pointer to internal disk cache object." alt="" coords="255,848,413,875"/>
+<area shape="rect" id="node14" href="$class_cache_class.html#a138f49e4b0a05f792f266e49a0f9c9ca" title="Method returning pointer to internal cookie jar object." alt="" coords="244,899,424,925"/>
+<area shape="rect" id="node15" href="$class_main_window.html#a785a675534a443aa0e6b79f53de7ade3" title=" " alt="" coords="245,216,423,243"/>
+<area shape="rect" id="node18" href="$class_main_window.html#a6414051d72dd212134e879b9b13c44b9" title=" " alt="" coords="513,696,655,723"/>
+<area shape="rect" id="node19" href="$class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="256,452,412,479"/>
+<area shape="rect" id="node26" href="$class_main_window.html#a9bb1f3b7f6b5360abfd2dc01fc1c8930" title=" " alt="" coords="245,949,423,976"/>
+<area shape="rect" id="node27" href="$class_main_window.html#aea94d95dceec9f328daf374510607625" title="Simple slot (dis)abling actions for channel view depending on selection." alt="" coords="236,1001,432,1042"/>
+<area shape="rect" id="node28" href="$class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="255,747,413,773"/>
+<area shape="rect" id="node3" href="$classadd_channel.html#abcb70696760597b9e7d813bbc6cf4015" title="Getter method for details of freshly added channel." alt="" coords="488,5,680,32"/>
+<area shape="rect" id="node4" href="$classadd_channel.html#ab697a61986b6ef52a96a73385c7daf67" title="Getter method for items from the freshly added channel." alt="" coords="483,56,685,83"/>
+<area shape="rect" id="node5" href="$class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title="Simple override of generic select() with lazy model population off." alt="" coords="509,157,659,184"/>
+<area shape="rect" id="node6" href="$class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off." alt="" coords="773,325,907,352"/>
+<area shape="rect" id="node8" href="$class_main_window.html#abb30531afee763d0586ee6323fd332e2" title=" " alt="" coords="493,645,675,672"/>
+<area shape="rect" id="node10" href="$classchannel_edit_dialog.html#a5f567edf9575a84563254268dbf8c692" title="Getter method for the altered channel." alt="" coords="515,849,653,890"/>
+<area shape="rect" id="node11" href="$classchannel_edit_dialog.html#a611f52870d5b8809a7343d531dd38953" title="Setter method for the view items." alt="" coords="515,914,653,955"/>
+<area shape="rect" id="node12" href="$classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26" title="Method fills the form with ori record data." alt="" coords="771,914,909,955"/>
+<area shape="rect" id="node16" href="$class_main_window.html#a5d2db4b1975b390fd9a78bc3ab8340a7" title=" " alt="" coords="490,209,678,250"/>
+<area shape="rect" id="node17" href="$class_main_window.html#a5c4520dbb20f711ce38c6d3973e4f679" title=" " alt="" coords="741,209,939,250"/>
+<area shape="rect" id="node20" href="$class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd" title="Slot redefines filtering column and content for items display." alt="" coords="509,325,659,352"/>
+<area shape="rect" id="node21" href="$class_main_window.html#a3572db0791eefd0369bc679b581f5914" title=" " alt="" coords="736,573,944,614"/>
+<area shape="rect" id="node22" href="$class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67" title="Slot setting item/entry to &quot;read&quot; status after successful loading of the page." alt="" coords="496,275,672,301"/>
+<area shape="rect" id="node23" href="$class_main_window.html#a9feda9728da59eb5ad25a666444b57fc" title="Slot restoring default setting of the header in items View." alt="" coords="741,507,939,533"/>
+<area shape="rect" id="node24" href="$class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf" title=" " alt="" coords="480,529,688,570"/>
+<area shape="rect" id="node25" href="$class_main_window.html#a49279ad253843874949bd5d14bf69005" title="Methods sets &quot;bookmark&quot; field in db for the given item." alt="" coords="507,376,661,403"/>
+<area shape="rect" id="node29" href="$class_main_window.html#a98b0cfb00f05f003d5f17edd5470a684" title=" " alt="" coords="499,747,669,773"/>
+<area shape="rect" id="node30" href="$class_main_window.html#a985bdf98220a3c6603a6edeb0bbcd96b" title=" " alt="" coords="523,797,645,824"/>
 </map>

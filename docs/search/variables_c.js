@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['settings_331',['settings',['../class_channel_model.html#aa449949ba24a92171f160feea303bc87',1,'ChannelModel::settings()'],['../class_main_window.html#a87b5b9562fe91ee19249f5a0d7617ce0',1,'MainWindow::settings()'],['../classoptiondlg.html#a8b89f163b30f659859cf525567e331d0',1,'optiondlg::settings()']]],
-  ['skipdays_332',['skipDays',['../struct_channel_parser_1_1channel_info.html#a7767748840740ae9576edcab57df1e16',1,'ChannelParser::channelInfo']]],
-  ['skiphours_333',['skipHours',['../struct_channel_parser_1_1channel_info.html#a552211dea638d54965c42da48a53419e',1,'ChannelParser::channelInfo']]],
-  ['status_334',['status',['../classadd_channel.html#aeae69577a835c394fb1283f39ec07752',1,'addChannel']]]
+  ['parser_354',['parser',['../classadd_channel.html#a73f2fcd832c20ef102c8d62aae5c5daf',1,'addChannel']]],
+  ['pubdate_355',['pubDate',['../struct_channel_parser_1_1channel_info.html#a643eac49816970c2de827eb89613cad1',1,'ChannelParser::channelInfo::pubDate()'],['../struct_channel_parser_1_1item_info.html#af6cb328f4fccc5ff19081c2a4a156adb',1,'ChannelParser::itemInfo::pubDate()']]]
 ];

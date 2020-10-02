@@ -91,36 +91,51 @@ $(document).ready(function(){initNavTree('channeleditdialog_8h_source.html','');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CHANNELEDITDIALOG_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="classchannel_edit_dialog.html">channelEditDialog</a>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classchannel_edit_dialog.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classchannel_edit_dialog.html">channelEditDialog</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classchannel_edit_dialog.html#a24a116dbc913e591c98872b74d9b1fd6">channelEditDialog</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classchannel_edit_dialog.html#aba131aa4747c34722c411829f32dee74">~channelEditDialog</a>();</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QSqlRecord&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="classchannel_edit_dialog.html">channelEditDialog</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classchannel_edit_dialog.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classchannel_edit_dialog.html">channelEditDialog</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classchannel_edit_dialog.html#aa9b7544fceb44e2fa97f8f69a53fe8e9">   19</a></span>&#160;    Ui::channelEditDialog *<a class="code" href="classchannel_edit_dialog.html#aa9b7544fceb44e2fa97f8f69a53fe8e9">ui</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // CHANNELEDITDIALOG_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classchannel_edit_dialog.html#a24a116dbc913e591c98872b74d9b1fd6">channelEditDialog</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classchannel_edit_dialog.html#aba131aa4747c34722c411829f32dee74">~channelEditDialog</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classchannel_edit_dialog.html#a611f52870d5b8809a7343d531dd38953">setData</a>(QSqlRecord record);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QSqlRecord <a class="code" href="classchannel_edit_dialog.html#a5f567edf9575a84563254268dbf8c692">getData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classchannel_edit_dialog.html#aa9b7544fceb44e2fa97f8f69a53fe8e9">   37</a></span>&#160;    Ui::channelEditDialog *<a class="code" href="classchannel_edit_dialog.html#aa9b7544fceb44e2fa97f8f69a53fe8e9">ui</a>; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classchannel_edit_dialog.html#a95d024f312d195f95ef3395de98c7609">   38</a></span>&#160;    QSqlRecord <a class="code" href="classchannel_edit_dialog.html#a95d024f312d195f95ef3395de98c7609">ori</a>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26">fillData</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif // CHANNELEDITDIALOG_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasschannel_edit_dialog_html_aba131aa4747c34722c411829f32dee74"><div class="ttname"><a href="classchannel_edit_dialog.html#aba131aa4747c34722c411829f32dee74">channelEditDialog::~channelEditDialog</a></div><div class="ttdeci">~channelEditDialog()</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8cpp_source.html#l00011">channeleditdialog.cpp:11</a></div></div>
-<div class="ttc" id="aclasschannel_edit_dialog_html"><div class="ttname"><a href="classchannel_edit_dialog.html">channelEditDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8h_source.html#l00010">channeleditdialog.h:11</a></div></div>
-<div class="ttc" id="aclasschannel_edit_dialog_html_a24a116dbc913e591c98872b74d9b1fd6"><div class="ttname"><a href="classchannel_edit_dialog.html#a24a116dbc913e591c98872b74d9b1fd6">channelEditDialog::channelEditDialog</a></div><div class="ttdeci">channelEditDialog(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8cpp_source.html#l00004">channeleditdialog.cpp:4</a></div></div>
+<div class="ttc" id="aclasschannel_edit_dialog_html_a5f567edf9575a84563254268dbf8c692"><div class="ttname"><a href="classchannel_edit_dialog.html#a5f567edf9575a84563254268dbf8c692">channelEditDialog::getData</a></div><div class="ttdeci">QSqlRecord getData() const</div><div class="ttdoc">Getter method for the altered channel.</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8cpp_source.html#l00057">channeleditdialog.cpp:57</a></div></div>
+<div class="ttc" id="aclasschannel_edit_dialog_html_aba131aa4747c34722c411829f32dee74"><div class="ttname"><a href="classchannel_edit_dialog.html#aba131aa4747c34722c411829f32dee74">channelEditDialog::~channelEditDialog</a></div><div class="ttdeci">~channelEditDialog()</div><div class="ttdoc">Generic destructor.</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8cpp_source.html#l00023">channeleditdialog.cpp:23</a></div></div>
+<div class="ttc" id="aclasschannel_edit_dialog_html_a2d766735ced8d481af661d1879951a26"><div class="ttname"><a href="classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26">channelEditDialog::fillData</a></div><div class="ttdeci">void fillData()</div><div class="ttdoc">Method fills the form with ori record data.</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8cpp_source.html#l00033">channeleditdialog.cpp:33</a></div></div>
+<div class="ttc" id="aclasschannel_edit_dialog_html"><div class="ttname"><a href="classchannel_edit_dialog.html">channelEditDialog</a></div><div class="ttdoc">Simple editor of properties of RSS channel as a modal dialog.</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8h_source.html#l00014">channeleditdialog.h:15</a></div></div>
+<div class="ttc" id="aclasschannel_edit_dialog_html_a24a116dbc913e591c98872b74d9b1fd6"><div class="ttname"><a href="classchannel_edit_dialog.html#a24a116dbc913e591c98872b74d9b1fd6">channelEditDialog::channelEditDialog</a></div><div class="ttdeci">channelEditDialog(QWidget *parent=nullptr)</div><div class="ttdoc">Generic constructor. Inits the view.</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8cpp_source.html#l00004">channeleditdialog.cpp:4</a></div></div>
 <div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="addchannel_8h_source.html#l00011">addchannel.h:11</a></div></div>
-<div class="ttc" id="aclasschannel_edit_dialog_html_aa9b7544fceb44e2fa97f8f69a53fe8e9"><div class="ttname"><a href="classchannel_edit_dialog.html#aa9b7544fceb44e2fa97f8f69a53fe8e9">channelEditDialog::ui</a></div><div class="ttdeci">Ui::channelEditDialog * ui</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8h_source.html#l00019">channeleditdialog.h:19</a></div></div>
+<div class="ttc" id="aclasschannel_edit_dialog_html_a611f52870d5b8809a7343d531dd38953"><div class="ttname"><a href="classchannel_edit_dialog.html#a611f52870d5b8809a7343d531dd38953">channelEditDialog::setData</a></div><div class="ttdeci">void setData(QSqlRecord record)</div><div class="ttdoc">Setter method for the view items.</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8cpp_source.html#l00028">channeleditdialog.cpp:28</a></div></div>
+<div class="ttc" id="aclasschannel_edit_dialog_html_a95d024f312d195f95ef3395de98c7609"><div class="ttname"><a href="classchannel_edit_dialog.html#a95d024f312d195f95ef3395de98c7609">channelEditDialog::ori</a></div><div class="ttdeci">QSqlRecord ori</div><div class="ttdoc">Holder var for source record.</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8h_source.html#l00038">channeleditdialog.h:38</a></div></div>
+<div class="ttc" id="aclasschannel_edit_dialog_html_aa9b7544fceb44e2fa97f8f69a53fe8e9"><div class="ttname"><a href="classchannel_edit_dialog.html#aa9b7544fceb44e2fa97f8f69a53fe8e9">channelEditDialog::ui</a></div><div class="ttdeci">Ui::channelEditDialog * ui</div><div class="ttdoc">User interface pointer.</div><div class="ttdef"><b>Definition:</b> <a href="channeleditdialog_8h_source.html#l00037">channeleditdialog.h:37</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="channeleditdialog_8h.html">channeleditdialog.h</a></li>
-    <li class="footer">Generated on Thu Oct 1 2020 15:32:53 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Fri Oct 2 2020 17:28:33 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

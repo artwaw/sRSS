@@ -1,5 +1,5 @@
 <map id="MainWindow::itemAct" name="MainWindow::itemAct">
-<area shape="rect" id="node1" title=" " alt="" coords="440,5,591,32"/>
+<area shape="rect" id="node1" title="Slot redefines filtering column and content for items display." alt="" coords="440,5,591,32"/>
 <area shape="rect" id="node2" href="$class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="236,5,392,32"/>
-<area shape="rect" id="node3" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>

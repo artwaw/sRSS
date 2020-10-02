@@ -1,5 +1,5 @@
 <map id="MainWindow::addChannel" name="MainWindow::addChannel">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,183,108"/>
+<area shape="rect" id="node1" title="Method asks for URL of the new RSS channel, if correct adds the channel and items to the internal db." alt="" coords="5,81,183,108"/>
 <area shape="rect" id="node2" href="$classadd_channel.html#abcb70696760597b9e7d813bbc6cf4015" title="Getter method for details of freshly added channel." alt="" coords="236,5,428,32"/>
 <area shape="rect" id="node3" href="$classadd_channel.html#ab697a61986b6ef52a96a73385c7daf67" title="Getter method for items from the freshly added channel." alt="" coords="231,56,433,83"/>
 <area shape="rect" id="node4" href="$class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title="Simple override of generic select() with lazy model population off." alt="" coords="257,107,407,133"/>

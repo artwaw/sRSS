@@ -1,8 +1,15 @@
 var searchData=
 [
-  ['lasterror_254',['lastError',['../class_channel_parser.html#a95f19898ddeb22180cc4ac45532e0a5f',1,'ChannelParser']]],
-  ['laststatus_255',['lastStatus',['../classadd_channel.html#afb6c49468406327bedae0dad6681039b',1,'addChannel']]],
-  ['listcookies_256',['listCookies',['../class_t_n_cookie_jar.html#a6cbf59b72767236ab20133c0442016c6',1,'TNCookieJar']]],
-  ['loadcookie_257',['loadCookie',['../class_t_n_cookie_jar.html#a1d0865dc9a5c463eecf9bf0208fb38d9',1,'TNCookieJar']]],
-  ['loadsettings_258',['loadSettings',['../class_main_window.html#a9bb1f3b7f6b5360abfd2dc01fc1c8930',1,'MainWindow']]]
+  ['init_261',['init',['../class_channel_parser.html#a3fee8e66e2e9c233ef3711ce0ef3d3bf',1,'ChannelParser']]],
+  ['initchannels_262',['initChannels',['../class_main_window.html#a785a675534a443aa0e6b79f53de7ade3',1,'MainWindow']]],
+  ['initdb_263',['initDB',['../class_main_window.html#a6414051d72dd212134e879b9b13c44b9',1,'MainWindow']]],
+  ['inititems_264',['initItems',['../class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6',1,'MainWindow']]],
+  ['insertcookie_265',['insertCookie',['../class_t_n_cookie_jar.html#a396965962b55f68bf6cdf6292caa2839',1,'TNCookieJar']]],
+  ['iscachevalid_266',['isCacheValid',['../class_cache_class.html#a4fdbc58c6b78793dd60b3392db66afa8',1,'CacheClass']]],
+  ['isjarvalid_267',['isJarValid',['../class_cache_class.html#af2c1f156c2846d379d0667fe4c136627',1,'CacheClass']]],
+  ['itemact_268',['itemAct',['../class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd',1,'MainWindow']]],
+  ['itemdelegate_269',['ItemDelegate',['../class_item_delegate.html#aedf98e95280ffad1606d1cef1da75555',1,'ItemDelegate']]],
+  ['itemheadermenurequested_270',['itemHeaderMenuRequested',['../class_main_window.html#a3572db0791eefd0369bc679b581f5914',1,'MainWindow']]],
+  ['itemproxymodel_271',['ItemProxyModel',['../class_item_proxy_model.html#a0ab4f02ebbd9bb5fc1e1799b264aa9f8',1,'ItemProxyModel']]],
+  ['itemsmodel_272',['ItemsModel',['../class_items_model.html#a2c18bf08537023bf4b2f864b438c875f',1,'ItemsModel']]]
 ];

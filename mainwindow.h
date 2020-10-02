@@ -30,6 +30,8 @@ SPDX: GPL-3.0-or-later
 #include "itemproxymodel.h"
 #include "channeldelegate.h"
 #include "cacheclass.h"
+#include "channeleditdialog.h"
+#include "channelremovedialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -72,17 +74,48 @@ protected:
 
 private slots:
 //    void updateItems();
+
+    /*! \brief Method asks for URL of the new RSS channel, if correct adds the channel and items to the internal db */
     void addChannel();
-//    void editChannel();
-//    void removeChannel();
+
+    /*! \brief Displays dialog with edit options for the selected channel.
+     *
+     * Window is populated with existing data for the channel. Chanes are saved upon clicking "accept" only. */
+    void editChannel();
+
+    /*! \brief Method removes selected channel.
+     *
+     * User can ack removal of bookmarked items or leave them dangling. */
+    void removeChannel();
+
+    /*! \brief Methods sets "bookmark" field in db for the given item.
+     * \param idx Index of the entry to be bookmarked */
     void starItem(const QModelIndex &idx);
+
+    /*! \brief Slot triggering network disk cache purge. */
     void clearCache();
 //    void moveCache(QString target);
 //    void clearDB();
 //    void moveDB(QString target);
+
+    /*! \brief Slot redefines filtering column and content for items display.
+     *
+     * This slot is linked when users clicks on the channel view.
+     * If user clicks on "unread" or "bookmark" two special modes of filtering are triggered,
+     * otherwise just items corresponding to the channel are shown.
+     * \param idx Index of the channel view entry clicked. */
     void itemAct(QModelIndex idx);
+
+    /*! \brief Slot restoring default setting of the header in items View
+     * \see setupItemHeaderContextMenu() */
     void restoreHeaders();
+
+    /*! \brief Slot setting item/entry to "read" status after successful loading of the page
+     * \param ecode True if page of the item has been loaded successfuly, false otherwise */
     void onItemLoad(bool ecode);
+
+    /*! \brief Simple slot (dis)abling actions for channel view depending on selection */
+    void updateChannelActions();
 #ifndef QT_NO_CONTEXT_MENU
     void setupItemHeaderContextMenu();
     void setupChannelContextMenu();

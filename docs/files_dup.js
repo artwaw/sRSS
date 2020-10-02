@@ -28,6 +28,10 @@ var files_dup =
       [ "encl", "struct_channel_parser_1_1encl.html", "struct_channel_parser_1_1encl" ],
       [ "itemInfo", "struct_channel_parser_1_1item_info.html", "struct_channel_parser_1_1item_info" ]
     ] ],
+    [ "channelremovedialog.cpp", "channelremovedialog_8cpp.html", null ],
+    [ "channelremovedialog.h", "channelremovedialog_8h.html", [
+      [ "channelRemoveDialog", "classchannel_remove_dialog.html", "classchannel_remove_dialog" ]
+    ] ],
     [ "itemdelegate.cpp", "itemdelegate_8cpp.html", null ],
     [ "itemdelegate.h", "itemdelegate_8h.html", [
       [ "ItemDelegate", "class_item_delegate.html", "class_item_delegate" ]

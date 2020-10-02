@@ -6,6 +6,7 @@ var annotated_dup =
     [ "channelEditDialog", "classchannel_edit_dialog.html", "classchannel_edit_dialog" ],
     [ "ChannelModel", "class_channel_model.html", "class_channel_model" ],
     [ "ChannelParser", "class_channel_parser.html", "class_channel_parser" ],
+    [ "channelRemoveDialog", "classchannel_remove_dialog.html", "classchannel_remove_dialog" ],
     [ "ItemDelegate", "class_item_delegate.html", "class_item_delegate" ],
     [ "ItemProxyModel", "class_item_proxy_model.html", "class_item_proxy_model" ],
     [ "ItemsModel", "class_items_model.html", "class_items_model" ],

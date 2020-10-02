@@ -1,5 +1,5 @@
 <map id="addChannel::getChannelItems" name="addChannel::getChannelItems">
 <area shape="rect" id="node1" title="Getter method for items from the freshly added channel." alt="" coords="461,5,664,32"/>
-<area shape="rect" id="node2" href="$class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title=" " alt="" coords="236,5,413,32"/>
-<area shape="rect" id="node3" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title="Method asks for URL of the new RSS channel, if correct adds the channel and items to the internal db." alt="" coords="236,5,413,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>

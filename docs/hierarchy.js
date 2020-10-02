@@ -7,6 +7,7 @@ var hierarchy =
     [ "QDialog", null, [
       [ "addChannel", "classadd_channel.html", null ],
       [ "channelEditDialog", "classchannel_edit_dialog.html", null ],
+      [ "channelRemoveDialog", "classchannel_remove_dialog.html", null ],
       [ "optiondlg", "classoptiondlg.html", null ]
     ] ],
     [ "QMainWindow", null, [

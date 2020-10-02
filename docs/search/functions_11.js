@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zeroconf_293',['zeroconf',['../class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f',1,'MainWindow']]]
+  ['verifybtns_314',['verifyBtns',['../classadd_channel.html#a6dc3e0683c03ee3eaec7e7b2aa4f6dc6',1,'addChannel']]]
 ];

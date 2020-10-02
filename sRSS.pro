@@ -22,6 +22,7 @@ SOURCES += \
     channeleditdialog.cpp \
     channelmodel.cpp \
     channelparser.cpp \
+    channelremovedialog.cpp \
     itemdelegate.cpp \
     itemproxymodel.cpp \
     itemsmodel.cpp \
@@ -38,6 +39,7 @@ HEADERS += \
     channeleditdialog.h \
     channelmodel.h \
     channelparser.h \
+    channelremovedialog.h \
     itemdelegate.h \
     itemproxymodel.h \
     itemsmodel.h \
@@ -49,6 +51,7 @@ HEADERS += \
 FORMS += \
     addchannel.ui \
     channeleditdialog.ui \
+    channelremovedialog.ui \
     mainwindow.ui \
     optiondlg.ui
 
@@ -64,6 +67,7 @@ DISTFILES += \
     COPYING \
     GNU GENERAL PUBLIC LICENSE \
     README.md \
+    channelschema.sql \
     itemschema.sql \
     lic_template
 

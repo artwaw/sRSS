@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['getcache_235',['getCache',['../class_cache_class.html#a529bfa1dcfff3f124815b544854a1f1f',1,'CacheClass']]],
-  ['getchannelinfo_236',['getChannelInfo',['../classadd_channel.html#abcb70696760597b9e7d813bbc6cf4015',1,'addChannel::getChannelInfo()'],['../class_channel_parser.html#a6a3a5de3d002cb877bc7e9073c871434',1,'ChannelParser::getChannelInfo()']]],
-  ['getchannelitems_237',['getChannelItems',['../classadd_channel.html#ab697a61986b6ef52a96a73385c7daf67',1,'addChannel']]],
-  ['getcookiejar_238',['getCookieJar',['../class_cache_class.html#a138f49e4b0a05f792f266e49a0f9c9ca',1,'CacheClass']]],
-  ['getdirsize_239',['getDirSize',['../classoptiondlg.html#ad516796964408619525cdd13ec79f89c',1,'optiondlg']]],
-  ['getitemsinfo_240',['getItemsInfo',['../class_channel_parser.html#aa2d24e286b4f6e866b6473efb9201db7',1,'ChannelParser']]]
+  ['fail_249',['fail',['../class_main_window.html#a985bdf98220a3c6603a6edeb0bbcd96b',1,'MainWindow']]],
+  ['filldata_250',['fillData',['../classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26',1,'channelEditDialog']]],
+  ['filteracceptsrow_251',['filterAcceptsRow',['../class_item_proxy_model.html#ade94015f5d2f6fc0b73dced119b82bd4',1,'ItemProxyModel']]],
+  ['finished_252',['finished',['../classadd_channel.html#a6dc89f25a8fcee5a8804f31ef061c721',1,'addChannel::finished()'],['../classs_feed_updater.html#a74f1d25e4b2b6a62805eddeae0768c76',1,'sFeedUpdater::finished()']]]
 ];

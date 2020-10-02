@@ -1,5 +1,5 @@
 <map id="MainWindow::initDB" name="MainWindow::initDB">
 <area shape="rect" id="node1" title=" " alt="" coords="441,5,583,32"/>
-<area shape="rect" id="node2" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 <area shape="rect" id="node3" href="$class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="236,31,393,57"/>
 </map>

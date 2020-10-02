@@ -1,7 +1,7 @@
 <map id="MainWindow::saveSettings" name="MainWindow::saveSettings">
 <area shape="rect" id="node1" title=" " alt="" coords="455,56,637,83"/>
 <area shape="rect" id="node2" href="$class_main_window.html#aaa567a50ce7194fc11d55b0b06a43dd1" title=" " alt="" coords="241,5,401,32"/>
-<area shape="rect" id="node4" href="$class_main_window.html#a05fb9d72c044aa3bb7d187b994704e2f" title=" " alt="" coords="236,56,407,83"/>
+<area shape="rect" id="node4" href="$class_main_window.html#a05fb9d72c044aa3bb7d187b994704e2f" title="Event processed upon closing the main thread." alt="" coords="236,56,407,83"/>
 <area shape="rect" id="node5" href="$class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="243,107,400,133"/>
-<area shape="rect" id="node3" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,56,188,83"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,56,188,83"/>
 </map>

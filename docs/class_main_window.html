@@ -95,13 +95,16 @@ $(document).ready(function(){initNavTree('class_main_window.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
+<p>Main thread class holding UI and main logic of the program.  
+ <a href="class_main_window.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MainWindow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window__inherit__graph.png" border="0" usemap="#a_main_window_inherit__map" alt="Inheritance graph"/></div>
-<map name="_main_window_inherit__map" id="_main_window_inherit__map">
-<area shape="rect" title=" " alt="" coords="11,80,109,107"/>
+<map name="_main_window_inherit__map" id="a_main_window_inherit__map">
+<area shape="rect" title="Main thread class holding UI and main logic of the program." alt="" coords="11,80,109,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,115,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -110,7 +113,7 @@ Collaboration diagram for MainWindow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window__coll__graph.png" border="0" usemap="#a_main_window_coll__map" alt="Collaboration graph"/></div>
 <map name="_main_window_coll__map" id="a_main_window_coll__map">
-<area shape="rect" title=" " alt="" coords="259,260,357,287"/>
+<area shape="rect" title="Main thread class holding UI and main logic of the program." alt="" coords="259,260,357,287"/>
 <area shape="rect" title=" " alt="" coords="5,171,115,197"/>
 <area shape="rect" href="class_items_model.html" title="Simple QSqlTableModel descendant providing data for the items table view." alt="" coords="139,171,229,197"/>
 <area shape="rect" title=" " alt="" coords="138,81,259,108"/>
@@ -127,29 +130,47 @@ Collaboration diagram for MainWindow:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor that inits the program.  <a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">More...</a><br /></td></tr>
 <tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f7d2c56410fc1bfa135bb907d43313f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a1f7d2c56410fc1bfa135bb907d43313f">~MainWindow</a> () override</td></tr>
+<tr class="memdesc:a1f7d2c56410fc1bfa135bb907d43313f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic destructor.  <a href="class_main_window.html#a1f7d2c56410fc1bfa135bb907d43313f">More...</a><br /></td></tr>
 <tr class="separator:a1f7d2c56410fc1bfa135bb907d43313f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a05fb9d72c044aa3bb7d187b994704e2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a05fb9d72c044aa3bb7d187b994704e2f">closeEvent</a> (QCloseEvent *event) override</td></tr>
+<tr class="memdesc:a05fb9d72c044aa3bb7d187b994704e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event processed upon closing the main thread.  <a href="class_main_window.html#a05fb9d72c044aa3bb7d187b994704e2f">More...</a><br /></td></tr>
 <tr class="separator:a05fb9d72c044aa3bb7d187b994704e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Private Slots</h2></td></tr>
 <tr class="memitem:ab1a425cea0bc735edeff809e8403ea57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ab1a425cea0bc735edeff809e8403ea57">addChannel</a> ()</td></tr>
+<tr class="memdesc:ab1a425cea0bc735edeff809e8403ea57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method asks for URL of the new RSS channel, if correct adds the channel and items to the internal db.  <a href="class_main_window.html#ab1a425cea0bc735edeff809e8403ea57">More...</a><br /></td></tr>
 <tr class="separator:ab1a425cea0bc735edeff809e8403ea57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2100f360c1ec8fd5a9eae4b9e87d2cea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a2100f360c1ec8fd5a9eae4b9e87d2cea">editChannel</a> ()</td></tr>
+<tr class="memdesc:a2100f360c1ec8fd5a9eae4b9e87d2cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays dialog with edit options for the selected channel.  <a href="class_main_window.html#a2100f360c1ec8fd5a9eae4b9e87d2cea">More...</a><br /></td></tr>
+<tr class="separator:a2100f360c1ec8fd5a9eae4b9e87d2cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92fc8283fef9120120c703fc058b844"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ae92fc8283fef9120120c703fc058b844">removeChannel</a> ()</td></tr>
+<tr class="memdesc:ae92fc8283fef9120120c703fc058b844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method removes selected channel.  <a href="class_main_window.html#ae92fc8283fef9120120c703fc058b844">More...</a><br /></td></tr>
+<tr class="separator:ae92fc8283fef9120120c703fc058b844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49279ad253843874949bd5d14bf69005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a49279ad253843874949bd5d14bf69005">starItem</a> (const QModelIndex &amp;idx)</td></tr>
+<tr class="memdesc:a49279ad253843874949bd5d14bf69005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methods sets "bookmark" field in db for the given item.  <a href="class_main_window.html#a49279ad253843874949bd5d14bf69005">More...</a><br /></td></tr>
 <tr class="separator:a49279ad253843874949bd5d14bf69005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c6e1f6e85a314338a8175786c51e90c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a0c6e1f6e85a314338a8175786c51e90c">clearCache</a> ()</td></tr>
+<tr class="memdesc:a0c6e1f6e85a314338a8175786c51e90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot triggering network disk cache purge.  <a href="class_main_window.html#a0c6e1f6e85a314338a8175786c51e90c">More...</a><br /></td></tr>
 <tr class="separator:a0c6e1f6e85a314338a8175786c51e90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61866884fca4d1e4d8477a8c43f788fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd">itemAct</a> (QModelIndex idx)</td></tr>
+<tr class="memdesc:a61866884fca4d1e4d8477a8c43f788fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot redefines filtering column and content for items display.  <a href="class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd">More...</a><br /></td></tr>
 <tr class="separator:a61866884fca4d1e4d8477a8c43f788fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9feda9728da59eb5ad25a666444b57fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a9feda9728da59eb5ad25a666444b57fc">restoreHeaders</a> ()</td></tr>
+<tr class="memdesc:a9feda9728da59eb5ad25a666444b57fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot restoring default setting of the header in items View.  <a href="class_main_window.html#a9feda9728da59eb5ad25a666444b57fc">More...</a><br /></td></tr>
 <tr class="separator:a9feda9728da59eb5ad25a666444b57fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4302c6a9955cd8ddcf6e67805b484e67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67">onItemLoad</a> (bool ecode)</td></tr>
+<tr class="memdesc:a4302c6a9955cd8ddcf6e67805b484e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot setting item/entry to "read" status after successful loading of the page.  <a href="class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67">More...</a><br /></td></tr>
 <tr class="separator:a4302c6a9955cd8ddcf6e67805b484e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea94d95dceec9f328daf374510607625"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aea94d95dceec9f328daf374510607625">updateChannelActions</a> ()</td></tr>
+<tr class="memdesc:aea94d95dceec9f328daf374510607625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple slot (dis)abling actions for channel view depending on selection.  <a href="class_main_window.html#aea94d95dceec9f328daf374510607625">More...</a><br /></td></tr>
+<tr class="separator:aea94d95dceec9f328daf374510607625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab80a2273b6f045d2deed8ada1e740eaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf">setupItemHeaderContextMenu</a> ()</td></tr>
 <tr class="separator:ab80a2273b6f045d2deed8ada1e740eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d2db4b1975b390fd9a78bc3ab8340a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a5d2db4b1975b390fd9a78bc3ab8340a7">setupChannelContextMenu</a> ()</td></tr>
@@ -204,8 +225,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ada57966f51638291da96f299bf0cf267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00038">38</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<div class="textblock"><p>Main thread class holding UI and main logic of the program. </p>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00042">42</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a996c5a2b6f77944776856f08ec30858d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&nbsp;</a></span>MainWindow()</h2>
@@ -223,39 +245,67 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Generic constructor that inits the program. </p>
+<p>This ctor handles database initialisation, first run autodetection, inits models and views. This ctor is also resposible for network cache and cookie jar initialisation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent widget pointer or nullptr </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f">zeroconf()</a> </dd>
+<dd>
+<a class="el" href="class_main_window.html#a9b2cd095137ab815ebd2ef0d57d91b08">firstrun</a> </dd>
+<dd>
+<a class="el" href="class_main_window.html#a6414051d72dd212134e879b9b13c44b9">initDB()</a> </dd>
+<dd>
+<a class="el" href="class_main_window.html#a9bb1f3b7f6b5360abfd2dc01fc1c8930">loadSettings()</a> </dd>
+<dd>
+<a class="el" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6">initItems()</a> </dd>
+<dd>
+<a class="el" href="class_main_window.html#a785a675534a443aa0e6b79f53de7ade3">initChannels()</a> </dd>
+<dd>
+<a class="el" href="class_main_window.html#a879a3b01c905aaf72e76f8cf738dda61">cache</a> </dd>
+<dd>
+<a class="el" href="class_main_window.html#ada57966f51638291da96f299bf0cf267">manager</a> </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00019">19</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8cpp_source.html#l00148">addChannel()</a>, <a class="el" href="mainwindow_8h_source.html#l00081">cache</a>, <a class="el" href="mainwindow_8cpp_source.html#l00136">closeApp()</a>, <a class="el" href="mainwindow_8h_source.html#l00080">firstrun</a>, <a class="el" href="cacheclass_8cpp_source.html#l00023">CacheClass::getCache()</a>, <a class="el" href="cacheclass_8cpp_source.html#l00019">CacheClass::getCookieJar()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00114">initChannels()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00059">initDB()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00096">loadSettings()</a>, <a class="el" href="mainwindow_8h_source.html#l00082">manager</a>, <a class="el" href="mainwindow_8h_source.html#l00074">settings</a>, <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00065">zeroconf()</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8cpp_source.html#l00152">addChannel()</a>, <a class="el" href="mainwindow_8h_source.html#l00138">cache</a>, <a class="el" href="mainwindow_8cpp_source.html#l00140">closeApp()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00335">editChannel()</a>, <a class="el" href="mainwindow_8h_source.html#l00137">firstrun</a>, <a class="el" href="cacheclass_8cpp_source.html#l00023">CacheClass::getCache()</a>, <a class="el" href="cacheclass_8cpp_source.html#l00019">CacheClass::getCookieJar()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00118">initChannels()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00063">initDB()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00100">loadSettings()</a>, <a class="el" href="mainwindow_8h_source.html#l00139">manager</a>, <a class="el" href="mainwindow_8h_source.html#l00131">settings</a>, <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>, <a class="el" href="mainwindow_8cpp_source.html#l00347">updateChannelActions()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00069">zeroconf()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph.png" border="0" usemap="#aclass_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph" alt=""/></div>
 <map name="class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph" id="aclass_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,645,188,671"/>
-<area shape="rect" href="class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title=" " alt="" coords="237,173,415,199"/>
-<area shape="rect" href="class_main_window.html#aaa567a50ce7194fc11d55b0b06a43dd1" title=" " alt="" coords="246,594,406,621"/>
-<area shape="rect" href="class_cache_class.html#a529bfa1dcfff3f124815b544854a1f1f" title="Method returning pointer to internal disk cache object." alt="" coords="247,746,405,773"/>
-<area shape="rect" href="class_cache_class.html#a138f49e4b0a05f792f266e49a0f9c9ca" title="Method returning pointer to internal cookie jar object." alt="" coords="236,797,416,823"/>
-<area shape="rect" href="class_main_window.html#a785a675534a443aa0e6b79f53de7ade3" title=" " alt="" coords="237,71,415,98"/>
-<area shape="rect" href="class_main_window.html#a6414051d72dd212134e879b9b13c44b9" title=" " alt="" coords="497,695,639,722"/>
-<area shape="rect" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="248,451,404,478"/>
-<area shape="rect" href="class_main_window.html#a9bb1f3b7f6b5360abfd2dc01fc1c8930" title=" " alt="" coords="237,847,415,874"/>
-<area shape="rect" href="class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="247,695,405,722"/>
-<area shape="rect" href="classadd_channel.html#abcb70696760597b9e7d813bbc6cf4015" title="Getter method for details of freshly added channel." alt="" coords="472,173,664,199"/>
-<area shape="rect" href="classadd_channel.html#ab697a61986b6ef52a96a73385c7daf67" title="Getter method for items from the freshly added channel." alt="" coords="467,223,669,250"/>
-<area shape="rect" href="class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title="Simple override of generic select() with lazy model population off." alt="" coords="493,71,643,98"/>
-<area shape="rect" href="class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off." alt="" coords="757,350,891,377"/>
-<area shape="rect" href="class_main_window.html#abb30531afee763d0586ee6323fd332e2" title=" " alt="" coords="477,645,659,671"/>
-<area shape="rect" href="class_main_window.html#a5d2db4b1975b390fd9a78bc3ab8340a7" title=" " alt="" coords="474,5,662,47"/>
-<area shape="rect" href="class_main_window.html#a5c4520dbb20f711ce38c6d3973e4f679" title=" " alt="" coords="725,5,923,47"/>
-<area shape="rect" href="class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd" title=" " alt="" coords="493,274,643,301"/>
-<area shape="rect" href="class_main_window.html#a3572db0791eefd0369bc679b581f5914" title=" " alt="" coords="720,499,928,540"/>
-<area shape="rect" href="class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67" title=" " alt="" coords="480,325,656,351"/>
-<area shape="rect" href="class_main_window.html#a9feda9728da59eb5ad25a666444b57fc" title=" " alt="" coords="725,565,923,591"/>
-<area shape="rect" href="class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf" title=" " alt="" coords="464,528,672,569"/>
-<area shape="rect" href="class_main_window.html#a49279ad253843874949bd5d14bf69005" title=" " alt="" coords="491,375,645,402"/>
-<area shape="rect" href="class_main_window.html#a98b0cfb00f05f003d5f17edd5470a684" title=" " alt="" coords="483,746,653,773"/>
-<area shape="rect" href="class_main_window.html#a985bdf98220a3c6603a6edeb0bbcd96b" title=" " alt="" coords="507,797,629,823"/>
+<area shape="rect" title="Generic constructor that inits the program." alt="" coords="5,747,188,773"/>
+<area shape="rect" href="class_main_window.html#ab1a425cea0bc735edeff809e8403ea57" title="Method asks for URL of the new RSS channel, if correct adds the channel and items to the internal db." alt="" coords="245,107,423,133"/>
+<area shape="rect" href="class_main_window.html#aaa567a50ce7194fc11d55b0b06a43dd1" title=" " alt="" coords="254,645,414,672"/>
+<area shape="rect" href="class_main_window.html#a2100f360c1ec8fd5a9eae4b9e87d2cea" title="Displays dialog with edit options for the selected channel." alt="" coords="245,797,423,824"/>
+<area shape="rect" href="class_cache_class.html#a529bfa1dcfff3f124815b544854a1f1f" title="Method returning pointer to internal disk cache object." alt="" coords="255,848,413,875"/>
+<area shape="rect" href="class_cache_class.html#a138f49e4b0a05f792f266e49a0f9c9ca" title="Method returning pointer to internal cookie jar object." alt="" coords="244,899,424,925"/>
+<area shape="rect" href="class_main_window.html#a785a675534a443aa0e6b79f53de7ade3" title=" " alt="" coords="245,216,423,243"/>
+<area shape="rect" href="class_main_window.html#a6414051d72dd212134e879b9b13c44b9" title=" " alt="" coords="513,696,655,723"/>
+<area shape="rect" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="256,452,412,479"/>
+<area shape="rect" href="class_main_window.html#a9bb1f3b7f6b5360abfd2dc01fc1c8930" title=" " alt="" coords="245,949,423,976"/>
+<area shape="rect" href="class_main_window.html#aea94d95dceec9f328daf374510607625" title="Simple slot (dis)abling actions for channel view depending on selection." alt="" coords="236,1001,432,1042"/>
+<area shape="rect" href="class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="255,747,413,773"/>
+<area shape="rect" href="classadd_channel.html#abcb70696760597b9e7d813bbc6cf4015" title="Getter method for details of freshly added channel." alt="" coords="488,5,680,32"/>
+<area shape="rect" href="classadd_channel.html#ab697a61986b6ef52a96a73385c7daf67" title="Getter method for items from the freshly added channel." alt="" coords="483,56,685,83"/>
+<area shape="rect" href="class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title="Simple override of generic select() with lazy model population off." alt="" coords="509,157,659,184"/>
+<area shape="rect" href="class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off." alt="" coords="773,325,907,352"/>
+<area shape="rect" href="class_main_window.html#abb30531afee763d0586ee6323fd332e2" title=" " alt="" coords="493,645,675,672"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a5f567edf9575a84563254268dbf8c692" title="Getter method for the altered channel." alt="" coords="515,849,653,890"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a611f52870d5b8809a7343d531dd38953" title="Setter method for the view items." alt="" coords="515,914,653,955"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26" title="Method fills the form with ori record data." alt="" coords="771,914,909,955"/>
+<area shape="rect" href="class_main_window.html#a5d2db4b1975b390fd9a78bc3ab8340a7" title=" " alt="" coords="490,209,678,250"/>
+<area shape="rect" href="class_main_window.html#a5c4520dbb20f711ce38c6d3973e4f679" title=" " alt="" coords="741,209,939,250"/>
+<area shape="rect" href="class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd" title="Slot redefines filtering column and content for items display." alt="" coords="509,325,659,352"/>
+<area shape="rect" href="class_main_window.html#a3572db0791eefd0369bc679b581f5914" title=" " alt="" coords="736,573,944,614"/>
+<area shape="rect" href="class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67" title="Slot setting item/entry to &quot;read&quot; status after successful loading of the page." alt="" coords="496,275,672,301"/>
+<area shape="rect" href="class_main_window.html#a9feda9728da59eb5ad25a666444b57fc" title="Slot restoring default setting of the header in items View." alt="" coords="741,507,939,533"/>
+<area shape="rect" href="class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf" title=" " alt="" coords="480,529,688,570"/>
+<area shape="rect" href="class_main_window.html#a49279ad253843874949bd5d14bf69005" title="Methods sets &quot;bookmark&quot; field in db for the given item." alt="" coords="507,376,661,403"/>
+<area shape="rect" href="class_main_window.html#a98b0cfb00f05f003d5f17edd5470a684" title=" " alt="" coords="499,747,669,773"/>
+<area shape="rect" href="class_main_window.html#a985bdf98220a3c6603a6edeb0bbcd96b" title=" " alt="" coords="523,797,645,824"/>
 </map>
 </div>
 
@@ -284,9 +334,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00046">46</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p>Generic destructor. </p>
+<p>The only thing destructor does is to destroy the UI. All closing logic is handled in <a class="el" href="class_main_window.html#a05fb9d72c044aa3bb7d187b994704e2f" title="Event processed upon closing the main thread.">closeEvent()</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_main_window.html#a05fb9d72c044aa3bb7d187b994704e2f" title="Event processed upon closing the main thread.">closeEvent()</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00050">50</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
 
 </div>
 </div>
@@ -314,9 +367,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00148">148</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p>Method asks for URL of the new RSS channel, if correct adds the channel and items to the internal db. </p>
 
-<p class="reference">References <a class="el" href="channelparser_8h_source.html#l00042">ChannelParser::channelInfo::category</a>, <a class="el" href="mainwindow_8h_source.html#l00075">channels</a>, <a class="el" href="addchannel_8h_source.html#l00049">addChannel::chinfo</a>, <a class="el" href="channelparser_8h_source.html#l00037">ChannelParser::channelInfo::copyright</a>, <a class="el" href="channelparser_8h_source.html#l00035">ChannelParser::channelInfo::description</a>, <a class="el" href="channelparser_8h_source.html#l00044">ChannelParser::channelInfo::docs</a>, <a class="el" href="channelparser_8h_source.html#l00043">ChannelParser::channelInfo::generator</a>, <a class="el" href="addchannel_8cpp_source.html#l00060">addChannel::getChannelInfo()</a>, <a class="el" href="addchannel_8cpp_source.html#l00056">addChannel::getChannelItems()</a>, <a class="el" href="mainwindow_8h_source.html#l00077">items</a>, <a class="el" href="channelparser_8h_source.html#l00036">ChannelParser::channelInfo::language</a>, <a class="el" href="channelparser_8h_source.html#l00041">ChannelParser::channelInfo::lastBuildDate</a>, <a class="el" href="channelparser_8h_source.html#l00034">ChannelParser::channelInfo::link</a>, <a class="el" href="channelparser_8h_source.html#l00038">ChannelParser::channelInfo::managingDirector</a>, <a class="el" href="channelparser_8h_source.html#l00040">ChannelParser::channelInfo::pubDate</a>, <a class="el" href="channelmodel_8cpp_source.html#l00005">ChannelModel::select()</a>, <a class="el" href="itemsmodel_8cpp_source.html#l00005">ItemsModel::select()</a>, <a class="el" href="channelparser_8h_source.html#l00033">ChannelParser::channelInfo::title</a>, <a class="el" href="channelparser_8h_source.html#l00045">ChannelParser::channelInfo::ttl</a>, and <a class="el" href="channelparser_8h_source.html#l00039">ChannelParser::channelInfo::webMaster</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00152">152</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="channelparser_8h_source.html#l00042">ChannelParser::channelInfo::category</a>, <a class="el" href="mainwindow_8h_source.html#l00132">channels</a>, <a class="el" href="addchannel_8h_source.html#l00049">addChannel::chinfo</a>, <a class="el" href="channelparser_8h_source.html#l00037">ChannelParser::channelInfo::copyright</a>, <a class="el" href="channelparser_8h_source.html#l00035">ChannelParser::channelInfo::description</a>, <a class="el" href="channelparser_8h_source.html#l00044">ChannelParser::channelInfo::docs</a>, <a class="el" href="channelparser_8h_source.html#l00043">ChannelParser::channelInfo::generator</a>, <a class="el" href="addchannel_8cpp_source.html#l00060">addChannel::getChannelInfo()</a>, <a class="el" href="addchannel_8cpp_source.html#l00056">addChannel::getChannelItems()</a>, <a class="el" href="mainwindow_8h_source.html#l00134">items</a>, <a class="el" href="channelparser_8h_source.html#l00036">ChannelParser::channelInfo::language</a>, <a class="el" href="channelparser_8h_source.html#l00041">ChannelParser::channelInfo::lastBuildDate</a>, <a class="el" href="channelparser_8h_source.html#l00034">ChannelParser::channelInfo::link</a>, <a class="el" href="channelparser_8h_source.html#l00038">ChannelParser::channelInfo::managingDirector</a>, <a class="el" href="channelparser_8h_source.html#l00040">ChannelParser::channelInfo::pubDate</a>, <a class="el" href="channelmodel_8cpp_source.html#l00005">ChannelModel::select()</a>, <a class="el" href="itemsmodel_8cpp_source.html#l00005">ItemsModel::select()</a>, <a class="el" href="channelparser_8h_source.html#l00033">ChannelParser::channelInfo::title</a>, <a class="el" href="channelparser_8h_source.html#l00045">ChannelParser::channelInfo::ttl</a>, and <a class="el" href="channelparser_8h_source.html#l00039">ChannelParser::channelInfo::webMaster</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
 <div class="dynheader">
@@ -324,7 +379,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_ab1a425cea0bc735edeff809e8403ea57_cgraph.png" border="0" usemap="#aclass_main_window_ab1a425cea0bc735edeff809e8403ea57_cgraph" alt=""/></div>
 <map name="class_main_window_ab1a425cea0bc735edeff809e8403ea57_cgraph" id="aclass_main_window_ab1a425cea0bc735edeff809e8403ea57_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,183,108"/>
+<area shape="rect" title="Method asks for URL of the new RSS channel, if correct adds the channel and items to the internal db." alt="" coords="5,81,183,108"/>
 <area shape="rect" href="classadd_channel.html#abcb70696760597b9e7d813bbc6cf4015" title="Getter method for details of freshly added channel." alt="" coords="236,5,428,32"/>
 <area shape="rect" href="classadd_channel.html#ab697a61986b6ef52a96a73385c7daf67" title="Getter method for items from the freshly added channel." alt="" coords="231,56,433,83"/>
 <area shape="rect" href="class_channel_model.html#ac86acf07b26ecd6647d204f3b3b3ad6e" title="Simple override of generic select() with lazy model population off." alt="" coords="257,107,407,133"/>
@@ -335,9 +390,9 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_ab1a425cea0bc735edeff809e8403ea57_icgraph.png" border="0" usemap="#aclass_main_window_ab1a425cea0bc735edeff809e8403ea57_icgraph" alt=""/></div>
-<map name="class_main_window_ab1a425cea0bc735edeff809e8403ea57_icgraph" id="class_main_window_ab1a425cea0bc735edeff809e8403ea57_icgraph">
-<area shape="rect" title=" " alt="" coords="236,5,413,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<map name="class_main_window_ab1a425cea0bc735edeff809e8403ea57_icgraph" id="aclass_main_window_ab1a425cea0bc735edeff809e8403ea57_icgraph">
+<area shape="rect" title="Method asks for URL of the new RSS channel, if correct adds the channel and items to the internal db." alt="" coords="236,5,413,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -367,20 +422,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00276">276</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00278">278</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00079">channelContextMenu</a>, and <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00136">channelContextMenu</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00261">setupChannelContextMenu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00262">setupChannelContextMenu()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a5c4520dbb20f711ce38c6d3973e4f679_icgraph.png" border="0" usemap="#aclass_main_window_a5c4520dbb20f711ce38c6d3973e4f679_icgraph" alt=""/></div>
-<map name="class_main_window_a5c4520dbb20f711ce38c6d3973e4f679_icgraph" id="class_main_window_a5c4520dbb20f711ce38c6d3973e4f679_icgraph">
+<map name="class_main_window_a5c4520dbb20f711ce38c6d3973e4f679_icgraph" id="aclass_main_window_a5c4520dbb20f711ce38c6d3973e4f679_icgraph">
 <area shape="rect" title=" " alt="" coords="699,5,897,47"/>
 <area shape="rect" href="class_main_window.html#a5d2db4b1975b390fd9a78bc3ab8340a7" title=" " alt="" coords="463,5,651,47"/>
 <area shape="rect" href="class_main_window.html#a785a675534a443aa0e6b79f53de7ade3" title=" " alt="" coords="236,13,415,39"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,13,188,39"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,13,188,39"/>
 </map>
 </div>
 
@@ -409,9 +464,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00141">141</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p>Slot triggering network disk cache purge. </p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00074">settings</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00145">145</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00131">settings</a>.</p>
 
 </div>
 </div>
@@ -438,9 +495,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00136">136</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00140">140</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8cpp_source.html#l00101">saveSettings()</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8cpp_source.html#l00105">saveSettings()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
 <div class="dynheader">
@@ -456,9 +513,9 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_aaa567a50ce7194fc11d55b0b06a43dd1_icgraph.png" border="0" usemap="#aclass_main_window_aaa567a50ce7194fc11d55b0b06a43dd1_icgraph" alt=""/></div>
-<map name="class_main_window_aaa567a50ce7194fc11d55b0b06a43dd1_icgraph" id="class_main_window_aaa567a50ce7194fc11d55b0b06a43dd1_icgraph">
+<map name="class_main_window_aaa567a50ce7194fc11d55b0b06a43dd1_icgraph" id="aclass_main_window_aaa567a50ce7194fc11d55b0b06a43dd1_icgraph">
 <area shape="rect" title=" " alt="" coords="236,5,396,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -488,15 +545,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00131">131</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p>Event processed upon closing the main thread. </p>
+<p>In this event the state of the main window is being saved. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Generic QCloseEvent </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="mainwindow_8cpp_source.html#l00101">saveSettings()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00135">135</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="mainwindow_8cpp_source.html#l00105">saveSettings()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a05fb9d72c044aa3bb7d187b994704e2f_cgraph.png" border="0" usemap="#aclass_main_window_a05fb9d72c044aa3bb7d187b994704e2f_cgraph" alt=""/></div>
-<map name="class_main_window_a05fb9d72c044aa3bb7d187b994704e2f_cgraph" id="class_main_window_a05fb9d72c044aa3bb7d187b994704e2f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,176,32"/>
+<map name="class_main_window_a05fb9d72c044aa3bb7d187b994704e2f_cgraph" id="aclass_main_window_a05fb9d72c044aa3bb7d187b994704e2f_cgraph">
+<area shape="rect" title="Event processed upon closing the main thread." alt="" coords="5,5,176,32"/>
 <area shape="rect" href="class_main_window.html#abb30531afee763d0586ee6323fd332e2" title=" " alt="" coords="224,5,407,32"/>
 </map>
 </div>
@@ -537,17 +602,71 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00055">55</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00059">59</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00065">zeroconf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00069">zeroconf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a98b0cfb00f05f003d5f17edd5470a684_icgraph.png" border="0" usemap="#aclass_main_window_a98b0cfb00f05f003d5f17edd5470a684_icgraph" alt=""/></div>
-<map name="class_main_window_a98b0cfb00f05f003d5f17edd5470a684_icgraph" id="class_main_window_a98b0cfb00f05f003d5f17edd5470a684_icgraph">
+<map name="class_main_window_a98b0cfb00f05f003d5f17edd5470a684_icgraph" id="aclass_main_window_a98b0cfb00f05f003d5f17edd5470a684_icgraph">
 <area shape="rect" title=" " alt="" coords="441,5,611,32"/>
 <area shape="rect" href="class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="236,5,393,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2100f360c1ec8fd5a9eae4b9e87d2cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2100f360c1ec8fd5a9eae4b9e87d2cea">&#9670;&nbsp;</a></span>editChannel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::editChannel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Displays dialog with edit options for the selected channel. </p>
+<p>Window is populated with existing data for the channel. Chanes are saved upon clicking "accept" only. </p>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00335">335</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00132">channels</a>, <a class="el" href="channeleditdialog_8cpp_source.html#l00057">channelEditDialog::getData()</a>, <a class="el" href="channeleditdialog_8cpp_source.html#l00028">channelEditDialog::setData()</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a2100f360c1ec8fd5a9eae4b9e87d2cea_cgraph.png" border="0" usemap="#aclass_main_window_a2100f360c1ec8fd5a9eae4b9e87d2cea_cgraph" alt=""/></div>
+<map name="class_main_window_a2100f360c1ec8fd5a9eae4b9e87d2cea_cgraph" id="aclass_main_window_a2100f360c1ec8fd5a9eae4b9e87d2cea_cgraph">
+<area shape="rect" title="Displays dialog with edit options for the selected channel." alt="" coords="5,46,183,73"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a5f567edf9575a84563254268dbf8c692" title="Getter method for the altered channel." alt="" coords="231,5,368,47"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a611f52870d5b8809a7343d531dd38953" title="Setter method for the view items." alt="" coords="231,71,368,112"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26" title="Method fills the form with ori record data." alt="" coords="416,71,553,112"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a2100f360c1ec8fd5a9eae4b9e87d2cea_icgraph.png" border="0" usemap="#aclass_main_window_a2100f360c1ec8fd5a9eae4b9e87d2cea_icgraph" alt=""/></div>
+<map name="class_main_window_a2100f360c1ec8fd5a9eae4b9e87d2cea_icgraph" id="aclass_main_window_a2100f360c1ec8fd5a9eae4b9e87d2cea_icgraph">
+<area shape="rect" title="Displays dialog with edit options for the selected channel." alt="" coords="236,5,413,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -593,17 +712,17 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00050">50</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00054">54</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00065">zeroconf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00069">zeroconf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a985bdf98220a3c6603a6edeb0bbcd96b_icgraph.png" border="0" usemap="#aclass_main_window_a985bdf98220a3c6603a6edeb0bbcd96b_icgraph" alt=""/></div>
-<map name="class_main_window_a985bdf98220a3c6603a6edeb0bbcd96b_icgraph" id="class_main_window_a985bdf98220a3c6603a6edeb0bbcd96b_icgraph">
+<map name="class_main_window_a985bdf98220a3c6603a6edeb0bbcd96b_icgraph" id="aclass_main_window_a985bdf98220a3c6603a6edeb0bbcd96b_icgraph">
 <area shape="rect" title=" " alt="" coords="441,5,564,32"/>
 <area shape="rect" href="class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="236,5,393,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -632,9 +751,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00114">114</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00118">118</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00075">channels</a>, <a class="el" href="channelmodel_8cpp_source.html#l00005">ChannelModel::select()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00261">setupChannelContextMenu()</a>, and <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00132">channels</a>, <a class="el" href="channelmodel_8cpp_source.html#l00005">ChannelModel::select()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00262">setupChannelContextMenu()</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
 <div class="dynheader">
@@ -652,9 +771,9 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a785a675534a443aa0e6b79f53de7ade3_icgraph.png" border="0" usemap="#aclass_main_window_a785a675534a443aa0e6b79f53de7ade3_icgraph" alt=""/></div>
-<map name="class_main_window_a785a675534a443aa0e6b79f53de7ade3_icgraph" id="class_main_window_a785a675534a443aa0e6b79f53de7ade3_icgraph">
+<map name="class_main_window_a785a675534a443aa0e6b79f53de7ade3_icgraph" id="aclass_main_window_a785a675534a443aa0e6b79f53de7ade3_icgraph">
 <area shape="rect" title=" " alt="" coords="236,5,415,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -683,18 +802,18 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00059">59</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00063">63</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00074">settings</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00131">settings</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00065">zeroconf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00069">zeroconf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a6414051d72dd212134e879b9b13c44b9_icgraph.png" border="0" usemap="#aclass_main_window_a6414051d72dd212134e879b9b13c44b9_icgraph" alt=""/></div>
-<map name="class_main_window_a6414051d72dd212134e879b9b13c44b9_icgraph" id="class_main_window_a6414051d72dd212134e879b9b13c44b9_icgraph">
+<map name="class_main_window_a6414051d72dd212134e879b9b13c44b9_icgraph" id="aclass_main_window_a6414051d72dd212134e879b9b13c44b9_icgraph">
 <area shape="rect" title=" " alt="" coords="441,5,583,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 <area shape="rect" href="class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="236,31,393,57"/>
 </map>
 </div>
@@ -724,9 +843,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00193">193</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00197">197</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00080">firstrun</a>, <a class="el" href="mainwindow_8cpp_source.html#l00301">itemAct()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00272">itemHeaderMenuRequested()</a>, <a class="el" href="mainwindow_8h_source.html#l00076">itemproxy</a>, <a class="el" href="mainwindow_8h_source.html#l00077">items</a>, <a class="el" href="mainwindow_8cpp_source.html#l00325">onItemLoad()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00281">restoreHeaders()</a>, <a class="el" href="itemsmodel_8cpp_source.html#l00005">ItemsModel::select()</a>, <a class="el" href="mainwindow_8h_source.html#l00074">settings</a>, <a class="el" href="mainwindow_8cpp_source.html#l00232">setupItemHeaderContextMenu()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00313">starItem()</a>, and <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00137">firstrun</a>, <a class="el" href="mainwindow_8cpp_source.html#l00303">itemAct()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00274">itemHeaderMenuRequested()</a>, <a class="el" href="mainwindow_8h_source.html#l00133">itemproxy</a>, <a class="el" href="mainwindow_8h_source.html#l00134">items</a>, <a class="el" href="mainwindow_8cpp_source.html#l00327">onItemLoad()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00283">restoreHeaders()</a>, <a class="el" href="itemsmodel_8cpp_source.html#l00005">ItemsModel::select()</a>, <a class="el" href="mainwindow_8h_source.html#l00131">settings</a>, <a class="el" href="mainwindow_8cpp_source.html#l00233">setupItemHeaderContextMenu()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00315">starItem()</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
 <div class="dynheader">
@@ -735,22 +854,22 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_cgraph.png" border="0" usemap="#aclass_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_cgraph" alt=""/></div>
 <map name="class_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_cgraph" id="aclass_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_cgraph">
 <area shape="rect" title=" " alt="" coords="5,173,161,200"/>
-<area shape="rect" href="class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd" title=" " alt="" coords="238,5,389,32"/>
+<area shape="rect" href="class_main_window.html#a61866884fca4d1e4d8477a8c43f788fd" title="Slot redefines filtering column and content for items display." alt="" coords="238,5,389,32"/>
 <area shape="rect" href="class_main_window.html#a3572db0791eefd0369bc679b581f5914" title=" " alt="" coords="465,63,673,105"/>
-<area shape="rect" href="class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67" title=" " alt="" coords="225,275,401,301"/>
+<area shape="rect" href="class_main_window.html#a4302c6a9955cd8ddcf6e67805b484e67" title="Slot setting item/entry to &quot;read&quot; status after successful loading of the page." alt="" coords="225,275,401,301"/>
 <area shape="rect" href="class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off." alt="" coords="503,275,636,301"/>
-<area shape="rect" href="class_main_window.html#a9feda9728da59eb5ad25a666444b57fc" title=" " alt="" coords="471,159,668,185"/>
+<area shape="rect" href="class_main_window.html#a9feda9728da59eb5ad25a666444b57fc" title="Slot restoring default setting of the header in items View." alt="" coords="471,159,668,185"/>
 <area shape="rect" href="class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf" title=" " alt="" coords="209,107,417,149"/>
-<area shape="rect" href="class_main_window.html#a49279ad253843874949bd5d14bf69005" title=" " alt="" coords="237,325,390,352"/>
+<area shape="rect" href="class_main_window.html#a49279ad253843874949bd5d14bf69005" title="Methods sets &quot;bookmark&quot; field in db for the given item." alt="" coords="237,325,390,352"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_icgraph.png" border="0" usemap="#aclass_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_icgraph" alt=""/></div>
-<map name="class_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_icgraph" id="class_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_icgraph">
+<map name="class_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_icgraph" id="aclass_main_window_a1baa1e52f996dadc35f38ffcca3df8c6_icgraph">
 <area shape="rect" title=" " alt="" coords="236,5,392,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -780,19 +899,27 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00301">301</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p>Slot redefines filtering column and content for items display. </p>
+<p>This slot is linked when users clicks on the channel view. If user clicks on "unread" or "bookmark" two special modes of filtering are triggered, otherwise just items corresponding to the channel are shown. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>Index of the channel view entry clicked. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00076">itemproxy</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00303">303</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00133">itemproxy</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a61866884fca4d1e4d8477a8c43f788fd_icgraph.png" border="0" usemap="#aclass_main_window_a61866884fca4d1e4d8477a8c43f788fd_icgraph" alt=""/></div>
-<map name="class_main_window_a61866884fca4d1e4d8477a8c43f788fd_icgraph" id="class_main_window_a61866884fca4d1e4d8477a8c43f788fd_icgraph">
-<area shape="rect" title=" " alt="" coords="440,5,591,32"/>
+<map name="class_main_window_a61866884fca4d1e4d8477a8c43f788fd_icgraph" id="aclass_main_window_a61866884fca4d1e4d8477a8c43f788fd_icgraph">
+<area shape="rect" title="Slot redefines filtering column and content for items display." alt="" coords="440,5,591,32"/>
 <area shape="rect" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="236,5,392,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -822,20 +949,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00272">272</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00274">274</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00078">itemHeaderContextMenu</a>, and <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00135">itemHeaderContextMenu</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00232">setupItemHeaderContextMenu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00233">setupItemHeaderContextMenu()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a3572db0791eefd0369bc679b581f5914_icgraph.png" border="0" usemap="#aclass_main_window_a3572db0791eefd0369bc679b581f5914_icgraph" alt=""/></div>
-<map name="class_main_window_a3572db0791eefd0369bc679b581f5914_icgraph" id="class_main_window_a3572db0791eefd0369bc679b581f5914_icgraph">
+<map name="class_main_window_a3572db0791eefd0369bc679b581f5914_icgraph" id="aclass_main_window_a3572db0791eefd0369bc679b581f5914_icgraph">
 <area shape="rect" title=" " alt="" coords="696,5,904,47"/>
 <area shape="rect" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="236,13,392,39"/>
 <area shape="rect" href="class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf" title=" " alt="" coords="440,35,648,76"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,13,188,39"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,13,188,39"/>
 </map>
 </div>
 
@@ -864,18 +991,18 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00096">96</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00100">100</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00074">settings</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00131">settings</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a9bb1f3b7f6b5360abfd2dc01fc1c8930_icgraph.png" border="0" usemap="#aclass_main_window_a9bb1f3b7f6b5360abfd2dc01fc1c8930_icgraph" alt=""/></div>
-<map name="class_main_window_a9bb1f3b7f6b5360abfd2dc01fc1c8930_icgraph" id="class_main_window_a9bb1f3b7f6b5360abfd2dc01fc1c8930_icgraph">
+<map name="class_main_window_a9bb1f3b7f6b5360abfd2dc01fc1c8930_icgraph" id="aclass_main_window_a9bb1f3b7f6b5360abfd2dc01fc1c8930_icgraph">
 <area shape="rect" title=" " alt="" coords="236,5,415,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -905,17 +1032,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00325">325</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p>Slot setting item/entry to "read" status after successful loading of the page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ecode</td><td>True if page of the item has been loaded successfuly, false otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00076">itemproxy</a>, <a class="el" href="mainwindow_8h_source.html#l00077">items</a>, <a class="el" href="itemsmodel_8cpp_source.html#l00005">ItemsModel::select()</a>, and <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00327">327</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00133">itemproxy</a>, <a class="el" href="mainwindow_8h_source.html#l00134">items</a>, <a class="el" href="itemsmodel_8cpp_source.html#l00005">ItemsModel::select()</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a4302c6a9955cd8ddcf6e67805b484e67_cgraph.png" border="0" usemap="#aclass_main_window_a4302c6a9955cd8ddcf6e67805b484e67_cgraph" alt=""/></div>
 <map name="class_main_window_a4302c6a9955cd8ddcf6e67805b484e67_cgraph" id="aclass_main_window_a4302c6a9955cd8ddcf6e67805b484e67_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,181,32"/>
+<area shape="rect" title="Slot setting item/entry to &quot;read&quot; status after successful loading of the page." alt="" coords="5,5,181,32"/>
 <area shape="rect" href="class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off." alt="" coords="229,5,363,32"/>
 </map>
 </div>
@@ -923,12 +1058,42 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a4302c6a9955cd8ddcf6e67805b484e67_icgraph.png" border="0" usemap="#aclass_main_window_a4302c6a9955cd8ddcf6e67805b484e67_icgraph" alt=""/></div>
-<map name="class_main_window_a4302c6a9955cd8ddcf6e67805b484e67_icgraph" id="class_main_window_a4302c6a9955cd8ddcf6e67805b484e67_icgraph">
-<area shape="rect" title=" " alt="" coords="440,5,616,32"/>
+<map name="class_main_window_a4302c6a9955cd8ddcf6e67805b484e67_icgraph" id="aclass_main_window_a4302c6a9955cd8ddcf6e67805b484e67_icgraph">
+<area shape="rect" title="Slot setting item/entry to &quot;read&quot; status after successful loading of the page." alt="" coords="440,5,616,32"/>
 <area shape="rect" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="236,5,392,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ae92fc8283fef9120120c703fc058b844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92fc8283fef9120120c703fc058b844">&#9670;&nbsp;</a></span>removeChannel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::removeChannel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method removes selected channel. </p>
+<p>User can ack removal of bookmarked items or leave them dangling. </p>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00353">353</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -955,20 +1120,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00281">281</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p>Slot restoring default setting of the header in items View. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf">setupItemHeaderContextMenu()</a> </dd></dl>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00283">283</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00232">setupItemHeaderContextMenu()</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00233">setupItemHeaderContextMenu()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a9feda9728da59eb5ad25a666444b57fc_icgraph.png" border="0" usemap="#aclass_main_window_a9feda9728da59eb5ad25a666444b57fc_icgraph" alt=""/></div>
-<map name="class_main_window_a9feda9728da59eb5ad25a666444b57fc_icgraph" id="class_main_window_a9feda9728da59eb5ad25a666444b57fc_icgraph">
-<area shape="rect" title=" " alt="" coords="696,5,893,32"/>
+<map name="class_main_window_a9feda9728da59eb5ad25a666444b57fc_icgraph" id="aclass_main_window_a9feda9728da59eb5ad25a666444b57fc_icgraph">
+<area shape="rect" title="Slot restoring default setting of the header in items View." alt="" coords="696,5,893,32"/>
 <area shape="rect" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="236,5,392,32"/>
 <area shape="rect" href="class_main_window.html#ab80a2273b6f045d2deed8ada1e740eaf" title=" " alt="" coords="440,27,648,69"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -997,21 +1165,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00101">101</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00105">105</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00074">settings</a>, and <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00131">settings</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00136">closeApp()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00131">closeEvent()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00065">zeroconf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00140">closeApp()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00135">closeEvent()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00069">zeroconf()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_abb30531afee763d0586ee6323fd332e2_icgraph.png" border="0" usemap="#aclass_main_window_abb30531afee763d0586ee6323fd332e2_icgraph" alt=""/></div>
-<map name="class_main_window_abb30531afee763d0586ee6323fd332e2_icgraph" id="class_main_window_abb30531afee763d0586ee6323fd332e2_icgraph">
+<map name="class_main_window_abb30531afee763d0586ee6323fd332e2_icgraph" id="aclass_main_window_abb30531afee763d0586ee6323fd332e2_icgraph">
 <area shape="rect" title=" " alt="" coords="455,56,637,83"/>
 <area shape="rect" href="class_main_window.html#aaa567a50ce7194fc11d55b0b06a43dd1" title=" " alt="" coords="241,5,401,32"/>
-<area shape="rect" href="class_main_window.html#a05fb9d72c044aa3bb7d187b994704e2f" title=" " alt="" coords="236,56,407,83"/>
+<area shape="rect" href="class_main_window.html#a05fb9d72c044aa3bb7d187b994704e2f" title="Event processed upon closing the main thread." alt="" coords="236,56,407,83"/>
 <area shape="rect" href="class_main_window.html#ac2d5dfa84983b881f3ffa51b79fcff0f" title=" " alt="" coords="243,107,400,133"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,56,188,83"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,56,188,83"/>
 </map>
 </div>
 
@@ -1040,11 +1208,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00261">261</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00262">262</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00079">channelContextMenu</a>, <a class="el" href="mainwindow_8cpp_source.html#l00276">channelContextMenuRequested()</a>, and <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00136">channelContextMenu</a>, <a class="el" href="mainwindow_8cpp_source.html#l00278">channelContextMenuRequested()</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00114">initChannels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00118">initChannels()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1058,10 +1226,10 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a5d2db4b1975b390fd9a78bc3ab8340a7_icgraph.png" border="0" usemap="#aclass_main_window_a5d2db4b1975b390fd9a78bc3ab8340a7_icgraph" alt=""/></div>
-<map name="class_main_window_a5d2db4b1975b390fd9a78bc3ab8340a7_icgraph" id="class_main_window_a5d2db4b1975b390fd9a78bc3ab8340a7_icgraph">
+<map name="class_main_window_a5d2db4b1975b390fd9a78bc3ab8340a7_icgraph" id="aclass_main_window_a5d2db4b1975b390fd9a78bc3ab8340a7_icgraph">
 <area shape="rect" title=" " alt="" coords="463,5,651,47"/>
 <area shape="rect" href="class_main_window.html#a785a675534a443aa0e6b79f53de7ade3" title=" " alt="" coords="236,13,415,39"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,13,188,39"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,13,188,39"/>
 </map>
 </div>
 
@@ -1090,29 +1258,29 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00232">232</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00233">233</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00078">itemHeaderContextMenu</a>, <a class="el" href="mainwindow_8cpp_source.html#l00272">itemHeaderMenuRequested()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00281">restoreHeaders()</a>, and <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00135">itemHeaderContextMenu</a>, <a class="el" href="mainwindow_8cpp_source.html#l00274">itemHeaderMenuRequested()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00283">restoreHeaders()</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_ab80a2273b6f045d2deed8ada1e740eaf_cgraph.png" border="0" usemap="#aclass_main_window_ab80a2273b6f045d2deed8ada1e740eaf_cgraph" alt=""/></div>
-<map name="class_main_window_ab80a2273b6f045d2deed8ada1e740eaf_cgraph" id="class_main_window_ab80a2273b6f045d2deed8ada1e740eaf_cgraph">
+<map name="class_main_window_ab80a2273b6f045d2deed8ada1e740eaf_cgraph" id="aclass_main_window_ab80a2273b6f045d2deed8ada1e740eaf_cgraph">
 <area shape="rect" title=" " alt="" coords="5,35,213,76"/>
 <area shape="rect" href="class_main_window.html#a3572db0791eefd0369bc679b581f5914" title=" " alt="" coords="261,5,469,47"/>
-<area shape="rect" href="class_main_window.html#a9feda9728da59eb5ad25a666444b57fc" title=" " alt="" coords="267,71,464,98"/>
+<area shape="rect" href="class_main_window.html#a9feda9728da59eb5ad25a666444b57fc" title="Slot restoring default setting of the header in items View." alt="" coords="267,71,464,98"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_ab80a2273b6f045d2deed8ada1e740eaf_icgraph.png" border="0" usemap="#aclass_main_window_ab80a2273b6f045d2deed8ada1e740eaf_icgraph" alt=""/></div>
-<map name="class_main_window_ab80a2273b6f045d2deed8ada1e740eaf_icgraph" id="class_main_window_ab80a2273b6f045d2deed8ada1e740eaf_icgraph">
+<map name="class_main_window_ab80a2273b6f045d2deed8ada1e740eaf_icgraph" id="aclass_main_window_ab80a2273b6f045d2deed8ada1e740eaf_icgraph">
 <area shape="rect" title=" " alt="" coords="440,5,648,47"/>
 <area shape="rect" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="236,13,392,39"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,13,188,39"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,13,188,39"/>
 </map>
 </div>
 
@@ -1142,17 +1310,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00313">313</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p>Methods sets "bookmark" field in db for the given item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>Index of the entry to be bookmarked </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00076">itemproxy</a>, <a class="el" href="mainwindow_8h_source.html#l00077">items</a>, <a class="el" href="itemsmodel_8cpp_source.html#l00005">ItemsModel::select()</a>, and <a class="el" href="mainwindow_8h_source.html#l00073">ui</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00315">315</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00133">itemproxy</a>, <a class="el" href="mainwindow_8h_source.html#l00134">items</a>, <a class="el" href="itemsmodel_8cpp_source.html#l00005">ItemsModel::select()</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a49279ad253843874949bd5d14bf69005_cgraph.png" border="0" usemap="#aclass_main_window_a49279ad253843874949bd5d14bf69005_cgraph" alt=""/></div>
 <map name="class_main_window_a49279ad253843874949bd5d14bf69005_cgraph" id="aclass_main_window_a49279ad253843874949bd5d14bf69005_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,159,32"/>
+<area shape="rect" title="Methods sets &quot;bookmark&quot; field in db for the given item." alt="" coords="5,5,159,32"/>
 <area shape="rect" href="class_items_model.html#a9235e92a13a1104355927c87b77eb1d0" title="Simple override of generic select() with lazy model population off." alt="" coords="207,5,340,32"/>
 </map>
 </div>
@@ -1160,10 +1336,52 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a49279ad253843874949bd5d14bf69005_icgraph.png" border="0" usemap="#aclass_main_window_a49279ad253843874949bd5d14bf69005_icgraph" alt=""/></div>
-<map name="class_main_window_a49279ad253843874949bd5d14bf69005_icgraph" id="class_main_window_a49279ad253843874949bd5d14bf69005_icgraph">
-<area shape="rect" title=" " alt="" coords="440,5,593,32"/>
+<map name="class_main_window_a49279ad253843874949bd5d14bf69005_icgraph" id="aclass_main_window_a49279ad253843874949bd5d14bf69005_icgraph">
+<area shape="rect" title="Methods sets &quot;bookmark&quot; field in db for the given item." alt="" coords="440,5,593,32"/>
 <area shape="rect" href="class_main_window.html#a1baa1e52f996dadc35f38ffcca3df8c6" title=" " alt="" coords="236,5,392,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea94d95dceec9f328daf374510607625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea94d95dceec9f328daf374510607625">&#9670;&nbsp;</a></span>updateChannelActions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::updateChannelActions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Simple slot (dis)abling actions for channel view depending on selection. </p>
+
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00347">347</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="mainwindow_8h_source.html#l00133">itemproxy</a>, and <a class="el" href="mainwindow_8h_source.html#l00130">ui</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_aea94d95dceec9f328daf374510607625_icgraph.png" border="0" usemap="#aclass_main_window_aea94d95dceec9f328daf374510607625_icgraph" alt=""/></div>
+<map name="class_main_window_aea94d95dceec9f328daf374510607625_icgraph" id="aclass_main_window_aea94d95dceec9f328daf374510607625_icgraph">
+<area shape="rect" title="Simple slot (dis)abling actions for channel view depending on selection." alt="" coords="236,5,432,47"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,13,188,39"/>
 </map>
 </div>
 
@@ -1192,9 +1410,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00065">65</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8cpp_source.html#l00069">69</a> of file <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mainwindow_8cpp_source.html#l00055">criticalMsg()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00050">fail()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00059">initDB()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00101">saveSettings()</a>, and <a class="el" href="mainwindow_8h_source.html#l00074">settings</a>.</p>
+<p class="reference">References <a class="el" href="mainwindow_8cpp_source.html#l00059">criticalMsg()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00054">fail()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00063">initDB()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00105">saveSettings()</a>, and <a class="el" href="mainwindow_8h_source.html#l00131">settings</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
 <div class="dynheader">
@@ -1213,9 +1431,9 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_ac2d5dfa84983b881f3ffa51b79fcff0f_icgraph.png" border="0" usemap="#aclass_main_window_ac2d5dfa84983b881f3ffa51b79fcff0f_icgraph" alt=""/></div>
-<map name="class_main_window_ac2d5dfa84983b881f3ffa51b79fcff0f_icgraph" id="class_main_window_ac2d5dfa84983b881f3ffa51b79fcff0f_icgraph">
+<map name="class_main_window_ac2d5dfa84983b881f3ffa51b79fcff0f_icgraph" id="aclass_main_window_ac2d5dfa84983b881f3ffa51b79fcff0f_icgraph">
 <area shape="rect" title=" " alt="" coords="236,5,393,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,5,188,32"/>
 </map>
 </div>
 
@@ -1242,7 +1460,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00081">81</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00138">138</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
 
@@ -1268,9 +1486,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00079">79</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00136">136</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00276">channelContextMenuRequested()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00261">setupChannelContextMenu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00278">channelContextMenuRequested()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00262">setupChannelContextMenu()</a>.</p>
 
 </div>
 </div>
@@ -1294,9 +1512,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00075">75</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00132">132</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00148">addChannel()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00114">initChannels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00152">addChannel()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00335">editChannel()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00118">initChannels()</a>.</p>
 
 </div>
 </div>
@@ -1320,9 +1538,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00080">80</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00137">137</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
 
 </div>
 </div>
@@ -1346,9 +1564,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00078">78</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00135">135</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00272">itemHeaderMenuRequested()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00232">setupItemHeaderContextMenu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00274">itemHeaderMenuRequested()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00233">setupItemHeaderContextMenu()</a>.</p>
 
 </div>
 </div>
@@ -1372,9 +1590,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00076">76</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00133">133</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00301">itemAct()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00325">onItemLoad()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00313">starItem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00303">itemAct()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00327">onItemLoad()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00315">starItem()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00347">updateChannelActions()</a>.</p>
 
 </div>
 </div>
@@ -1398,9 +1616,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00077">77</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00134">134</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00148">addChannel()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00325">onItemLoad()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00313">starItem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00152">addChannel()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00327">onItemLoad()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00315">starItem()</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1642,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00082">82</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00139">139</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
 
@@ -1450,9 +1668,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00074">74</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00131">131</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00141">clearCache()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00059">initDB()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00096">loadSettings()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00101">saveSettings()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00065">zeroconf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00145">clearCache()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00063">initDB()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00100">loadSettings()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00105">saveSettings()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00069">zeroconf()</a>.</p>
 
 </div>
 </div>
@@ -1476,9 +1694,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00073">73</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mainwindow_8h_source.html#l00130">130</a> of file <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00276">channelContextMenuRequested()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00114">initChannels()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00193">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00272">itemHeaderMenuRequested()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00325">onItemLoad()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00281">restoreHeaders()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00101">saveSettings()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00261">setupChannelContextMenu()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00232">setupItemHeaderContextMenu()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00313">starItem()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00046">~MainWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00278">channelContextMenuRequested()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00335">editChannel()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00118">initChannels()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00197">initItems()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00274">itemHeaderMenuRequested()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00327">onItemLoad()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00283">restoreHeaders()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00105">saveSettings()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00262">setupChannelContextMenu()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00233">setupItemHeaderContextMenu()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00315">starItem()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00347">updateChannelActions()</a>, and <a class="el" href="mainwindow_8cpp_source.html#l00050">~MainWindow()</a>.</p>
 
 </div>
 </div>
@@ -1492,7 +1710,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_main_window.html">MainWindow</a></li>
-    <li class="footer">Generated on Thu Oct 1 2020 15:32:53 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Fri Oct 2 2020 17:28:33 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

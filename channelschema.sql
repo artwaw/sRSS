@@ -1,0 +1,1 @@
+create table sIndex(id integer primary key, rgroup integer, title text not null, link text not null unique, description text not null, lang text, copyright text, mandir text, webmaster text, pubdate text, lastbuild text, category text, generator text, docs text, ttl integer, imgurl text, imgwidth integer, imgheight integer, skiphrs text, skipdays text);

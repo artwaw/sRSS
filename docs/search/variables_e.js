@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['ui_339',['ui',['../classadd_channel.html#a395142d4f209810131dfcccb69a82d28',1,'addChannel::ui()'],['../classchannel_edit_dialog.html#aa9b7544fceb44e2fa97f8f69a53fe8e9',1,'channelEditDialog::ui()'],['../class_main_window.html#a35466a70ed47252a0191168126a352a5',1,'MainWindow::ui()'],['../classoptiondlg.html#aca17bc8a8a65ae91a97d2f5d491a4710',1,'optiondlg::ui()']]],
-  ['url_340',['url',['../struct_channel_parser_1_1img.html#aa95456a663fdbfc058b0c666bc97c4f1',1,'ChannelParser::img::url()'],['../struct_channel_parser_1_1encl.html#adc835f9cf1519047376e87dd1ab5235f',1,'ChannelParser::encl::url()']]]
+  ['timerid_360',['timerID',['../classs_feed_updater.html#aada19840592ae346f39bd7e3aafae7bd',1,'sFeedUpdater']]],
+  ['title_361',['title',['../struct_channel_parser_1_1img.html#ae77850335ea69f92453686de044603e6',1,'ChannelParser::img::title()'],['../struct_channel_parser_1_1channel_info.html#a8d3f73be33a01a9d3923a7574d1df014',1,'ChannelParser::channelInfo::title()'],['../struct_channel_parser_1_1item_info.html#a8401516c56391cbf6639cc8624c14eb0',1,'ChannelParser::itemInfo::title()']]],
+  ['ttl_362',['ttl',['../struct_channel_parser_1_1channel_info.html#a68696aea6a22bf9cf0fd0bbef14d660d',1,'ChannelParser::channelInfo']]],
+  ['type_363',['type',['../struct_channel_parser_1_1encl.html#a43cccb86e639a4ee20666c5d7dbac64c',1,'ChannelParser::encl']]]
 ];

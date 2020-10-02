@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classchannel_edit_dialog.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classchannel_edit_dialog-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -92,13 +93,16 @@ $(document).ready(function(){initNavTree('classchannel_edit_dialog.html',''); in
 </div><!--header-->
 <div class="contents">
 
+<p>Simple editor of properties of RSS channel as a modal dialog.  
+ <a href="classchannel_edit_dialog.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="channeleditdialog_8h_source.html">channeleditdialog.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for channelEditDialog:</div>
 <div class="dyncontent">
 <div class="center"><img src="classchannel_edit_dialog__inherit__graph.png" border="0" usemap="#achannel_edit_dialog_inherit__map" alt="Inheritance graph"/></div>
-<map name="channel_edit_dialog_inherit__map" id="channel_edit_dialog_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,135,107"/>
+<map name="channel_edit_dialog_inherit__map" id="achannel_edit_dialog_inherit__map">
+<area shape="rect" title="Simple editor of properties of RSS channel as a modal dialog." alt="" coords="5,80,135,107"/>
 <area shape="rect" title=" " alt="" coords="35,5,105,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -106,8 +110,8 @@ Inheritance diagram for channelEditDialog:</div>
 Collaboration diagram for channelEditDialog:</div>
 <div class="dyncontent">
 <div class="center"><img src="classchannel_edit_dialog__coll__graph.png" border="0" usemap="#achannel_edit_dialog_coll__map" alt="Collaboration graph"/></div>
-<map name="channel_edit_dialog_coll__map" id="channel_edit_dialog_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,135,107"/>
+<map name="channel_edit_dialog_coll__map" id="achannel_edit_dialog_coll__map">
+<area shape="rect" title="Simple editor of properties of RSS channel as a modal dialog." alt="" coords="5,80,135,107"/>
 <area shape="rect" title=" " alt="" coords="35,5,105,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -115,18 +119,37 @@ Collaboration diagram for channelEditDialog:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a24a116dbc913e591c98872b74d9b1fd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_edit_dialog.html#a24a116dbc913e591c98872b74d9b1fd6">channelEditDialog</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a24a116dbc913e591c98872b74d9b1fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic constructor. Inits the view.  <a href="classchannel_edit_dialog.html#a24a116dbc913e591c98872b74d9b1fd6">More...</a><br /></td></tr>
 <tr class="separator:a24a116dbc913e591c98872b74d9b1fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba131aa4747c34722c411829f32dee74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_edit_dialog.html#aba131aa4747c34722c411829f32dee74">~channelEditDialog</a> ()</td></tr>
+<tr class="memdesc:aba131aa4747c34722c411829f32dee74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic destructor.  <a href="classchannel_edit_dialog.html#aba131aa4747c34722c411829f32dee74">More...</a><br /></td></tr>
 <tr class="separator:aba131aa4747c34722c411829f32dee74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611f52870d5b8809a7343d531dd38953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_edit_dialog.html#a611f52870d5b8809a7343d531dd38953">setData</a> (QSqlRecord record)</td></tr>
+<tr class="memdesc:a611f52870d5b8809a7343d531dd38953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter method for the view items.  <a href="classchannel_edit_dialog.html#a611f52870d5b8809a7343d531dd38953">More...</a><br /></td></tr>
+<tr class="separator:a611f52870d5b8809a7343d531dd38953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f567edf9575a84563254268dbf8c692"><td class="memItemLeft" align="right" valign="top">QSqlRecord&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_edit_dialog.html#a5f567edf9575a84563254268dbf8c692">getData</a> () const</td></tr>
+<tr class="memdesc:a5f567edf9575a84563254268dbf8c692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter method for the altered channel.  <a href="classchannel_edit_dialog.html#a5f567edf9575a84563254268dbf8c692">More...</a><br /></td></tr>
+<tr class="separator:a5f567edf9575a84563254268dbf8c692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:a2d766735ced8d481af661d1879951a26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26">fillData</a> ()</td></tr>
+<tr class="memdesc:a2d766735ced8d481af661d1879951a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method fills the form with ori record data.  <a href="classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26">More...</a><br /></td></tr>
+<tr class="separator:a2d766735ced8d481af661d1879951a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa9b7544fceb44e2fa97f8f69a53fe8e9"><td class="memItemLeft" align="right" valign="top">Ui::channelEditDialog *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_edit_dialog.html#aa9b7544fceb44e2fa97f8f69a53fe8e9">ui</a></td></tr>
+<tr class="memdesc:aa9b7544fceb44e2fa97f8f69a53fe8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">User interface pointer.  <a href="classchannel_edit_dialog.html#aa9b7544fceb44e2fa97f8f69a53fe8e9">More...</a><br /></td></tr>
 <tr class="separator:aa9b7544fceb44e2fa97f8f69a53fe8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d024f312d195f95ef3395de98c7609"><td class="memItemLeft" align="right" valign="top">QSqlRecord&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchannel_edit_dialog.html#a95d024f312d195f95ef3395de98c7609">ori</a></td></tr>
+<tr class="memdesc:a95d024f312d195f95ef3395de98c7609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holder var for source record.  <a href="classchannel_edit_dialog.html#a95d024f312d195f95ef3395de98c7609">More...</a><br /></td></tr>
+<tr class="separator:a95d024f312d195f95ef3395de98c7609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="channeleditdialog_8h_source.html#l00010">10</a> of file <a class="el" href="channeleditdialog_8h_source.html">channeleditdialog.h</a>.</p>
+<div class="textblock"><p>Simple editor of properties of RSS channel as a modal dialog. </p>
+
+<p class="definition">Definition at line <a class="el" href="channeleditdialog_8h_source.html#l00014">14</a> of file <a class="el" href="channeleditdialog_8h_source.html">channeleditdialog.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a24a116dbc913e591c98872b74d9b1fd6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24a116dbc913e591c98872b74d9b1fd6">&#9670;&nbsp;</a></span>channelEditDialog()</h2>
@@ -152,9 +175,26 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Generic constructor. Inits the view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Optional parent object pointer or nullptr </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="channeleditdialog_8cpp_source.html#l00004">4</a> of file <a class="el" href="channeleditdialog_8cpp_source.html">channeleditdialog.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="channeleditdialog_8h_source.html#l00019">ui</a>.</p>
+<p class="reference">References <a class="el" href="channeleditdialog_8cpp_source.html#l00033">fillData()</a>, and <a class="el" href="channeleditdialog_8h_source.html#l00037">ui</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchannel_edit_dialog_a24a116dbc913e591c98872b74d9b1fd6_cgraph.png" border="0" usemap="#aclasschannel_edit_dialog_a24a116dbc913e591c98872b74d9b1fd6_cgraph" alt=""/></div>
+<map name="classchannel_edit_dialog_a24a116dbc913e591c98872b74d9b1fd6_cgraph" id="aclasschannel_edit_dialog_a24a116dbc913e591c98872b74d9b1fd6_cgraph">
+<area shape="rect" title="Generic constructor. Inits the view." alt="" coords="5,5,143,47"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26" title="Method fills the form with ori record data." alt="" coords="191,5,328,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -173,13 +213,179 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="channeleditdialog_8cpp_source.html#l00011">11</a> of file <a class="el" href="channeleditdialog_8cpp_source.html">channeleditdialog.cpp</a>.</p>
+<p>Generic destructor. </p>
 
-<p class="reference">References <a class="el" href="channeleditdialog_8h_source.html#l00019">ui</a>.</p>
+<p class="definition">Definition at line <a class="el" href="channeleditdialog_8cpp_source.html#l00023">23</a> of file <a class="el" href="channeleditdialog_8cpp_source.html">channeleditdialog.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="channeleditdialog_8h_source.html#l00037">ui</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2d766735ced8d481af661d1879951a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d766735ced8d481af661d1879951a26">&#9670;&nbsp;</a></span>fillData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void channelEditDialog::fillData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method fills the form with ori record data. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classchannel_edit_dialog.html#a611f52870d5b8809a7343d531dd38953" title="Setter method for the view items.">setData()</a> </dd>
+<dd>
+<a class="el" href="classchannel_edit_dialog.html#a95d024f312d195f95ef3395de98c7609" title="Holder var for source record.">ori</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="channeleditdialog_8cpp_source.html#l00033">33</a> of file <a class="el" href="channeleditdialog_8cpp_source.html">channeleditdialog.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="channeleditdialog_8h_source.html#l00038">ori</a>, and <a class="el" href="channeleditdialog_8h_source.html#l00037">ui</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="channeleditdialog_8cpp_source.html#l00004">channelEditDialog()</a>, and <a class="el" href="channeleditdialog_8cpp_source.html#l00028">setData()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchannel_edit_dialog_a2d766735ced8d481af661d1879951a26_icgraph.png" border="0" usemap="#aclasschannel_edit_dialog_a2d766735ced8d481af661d1879951a26_icgraph" alt=""/></div>
+<map name="classchannel_edit_dialog_a2d766735ced8d481af661d1879951a26_icgraph" id="aclasschannel_edit_dialog_a2d766735ced8d481af661d1879951a26_icgraph">
+<area shape="rect" title="Method fills the form with ori record data." alt="" coords="647,39,784,80"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a24a116dbc913e591c98872b74d9b1fd6" title="Generic constructor. Inits the view." alt="" coords="461,5,599,47"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a611f52870d5b8809a7343d531dd38953" title="Setter method for the view items." alt="" coords="461,71,599,112"/>
+<area shape="rect" href="class_main_window.html#a2100f360c1ec8fd5a9eae4b9e87d2cea" title="Displays dialog with edit options for the selected channel." alt="" coords="236,78,413,105"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,78,188,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5f567edf9575a84563254268dbf8c692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f567edf9575a84563254268dbf8c692">&#9670;&nbsp;</a></span>getData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSqlRecord channelEditDialog::getData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter method for the altered channel. </p>
+<p>Please note that it only holds valid data if dialog has been closed with "accept" button. </p><dl class="section return"><dt>Returns</dt><dd>Complete record with all the parameters (not only altered ones). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="channeleditdialog_8cpp_source.html#l00057">57</a> of file <a class="el" href="channeleditdialog_8cpp_source.html">channeleditdialog.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="channeleditdialog_8h_source.html#l00038">ori</a>, and <a class="el" href="channeleditdialog_8h_source.html#l00037">ui</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00335">MainWindow::editChannel()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchannel_edit_dialog_a5f567edf9575a84563254268dbf8c692_icgraph.png" border="0" usemap="#aclasschannel_edit_dialog_a5f567edf9575a84563254268dbf8c692_icgraph" alt=""/></div>
+<map name="classchannel_edit_dialog_a5f567edf9575a84563254268dbf8c692_icgraph" id="aclasschannel_edit_dialog_a5f567edf9575a84563254268dbf8c692_icgraph">
+<area shape="rect" title="Getter method for the altered channel." alt="" coords="461,5,599,47"/>
+<area shape="rect" href="class_main_window.html#a2100f360c1ec8fd5a9eae4b9e87d2cea" title="Displays dialog with edit options for the selected channel." alt="" coords="236,13,413,39"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,13,188,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a611f52870d5b8809a7343d531dd38953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a611f52870d5b8809a7343d531dd38953">&#9670;&nbsp;</a></span>setData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void channelEditDialog::setData </td>
+          <td>(</td>
+          <td class="paramtype">QSqlRecord&#160;</td>
+          <td class="paramname"><em>record</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setter method for the view items. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">record</td><td>Database record with channel parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="channeleditdialog_8cpp_source.html#l00028">28</a> of file <a class="el" href="channeleditdialog_8cpp_source.html">channeleditdialog.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="channeleditdialog_8cpp_source.html#l00033">fillData()</a>, and <a class="el" href="channeleditdialog_8h_source.html#l00038">ori</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mainwindow_8cpp_source.html#l00335">MainWindow::editChannel()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchannel_edit_dialog_a611f52870d5b8809a7343d531dd38953_cgraph.png" border="0" usemap="#aclasschannel_edit_dialog_a611f52870d5b8809a7343d531dd38953_cgraph" alt=""/></div>
+<map name="classchannel_edit_dialog_a611f52870d5b8809a7343d531dd38953_cgraph" id="aclasschannel_edit_dialog_a611f52870d5b8809a7343d531dd38953_cgraph">
+<area shape="rect" title="Setter method for the view items." alt="" coords="5,5,143,47"/>
+<area shape="rect" href="classchannel_edit_dialog.html#a2d766735ced8d481af661d1879951a26" title="Method fills the form with ori record data." alt="" coords="191,5,328,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classchannel_edit_dialog_a611f52870d5b8809a7343d531dd38953_icgraph.png" border="0" usemap="#aclasschannel_edit_dialog_a611f52870d5b8809a7343d531dd38953_icgraph" alt=""/></div>
+<map name="classchannel_edit_dialog_a611f52870d5b8809a7343d531dd38953_icgraph" id="aclasschannel_edit_dialog_a611f52870d5b8809a7343d531dd38953_icgraph">
+<area shape="rect" title="Setter method for the view items." alt="" coords="461,5,599,47"/>
+<area shape="rect" href="class_main_window.html#a2100f360c1ec8fd5a9eae4b9e87d2cea" title="Displays dialog with edit options for the selected channel." alt="" coords="236,13,413,39"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Generic constructor that inits the program." alt="" coords="5,13,188,39"/>
+</map>
+</div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a95d024f312d195f95ef3395de98c7609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d024f312d195f95ef3395de98c7609">&#9670;&nbsp;</a></span>ori</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSqlRecord channelEditDialog::ori</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Holder var for source record. </p>
+
+<p class="definition">Definition at line <a class="el" href="channeleditdialog_8h_source.html#l00038">38</a> of file <a class="el" href="channeleditdialog_8h_source.html">channeleditdialog.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="channeleditdialog_8cpp_source.html#l00033">fillData()</a>, <a class="el" href="channeleditdialog_8cpp_source.html#l00057">getData()</a>, and <a class="el" href="channeleditdialog_8cpp_source.html#l00028">setData()</a>.</p>
+
+</div>
+</div>
 <a id="aa9b7544fceb44e2fa97f8f69a53fe8e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9b7544fceb44e2fa97f8f69a53fe8e9">&#9670;&nbsp;</a></span>ui</h2>
 
@@ -200,9 +406,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="channeleditdialog_8h_source.html#l00019">19</a> of file <a class="el" href="channeleditdialog_8h_source.html">channeleditdialog.h</a>.</p>
+<p>User interface pointer. </p>
 
-<p class="reference">Referenced by <a class="el" href="channeleditdialog_8cpp_source.html#l00004">channelEditDialog()</a>, and <a class="el" href="channeleditdialog_8cpp_source.html#l00011">~channelEditDialog()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="channeleditdialog_8h_source.html#l00037">37</a> of file <a class="el" href="channeleditdialog_8h_source.html">channeleditdialog.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="channeleditdialog_8cpp_source.html#l00004">channelEditDialog()</a>, <a class="el" href="channeleditdialog_8cpp_source.html#l00033">fillData()</a>, <a class="el" href="channeleditdialog_8cpp_source.html#l00057">getData()</a>, and <a class="el" href="channeleditdialog_8cpp_source.html#l00023">~channelEditDialog()</a>.</p>
 
 </div>
 </div>
@@ -216,7 +424,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classchannel_edit_dialog.html">channelEditDialog</a></li>
-    <li class="footer">Generated on Thu Oct 1 2020 15:32:53 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Fri Oct 2 2020 17:28:33 for Small RSS by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

@@ -1,2 +1,1 @@
-create table
-(id integer primary key, title text, link text, description test, comments text, enclourl text, enclopath text, guid text, pubDate text);
+create table items(id integer primary key, origin integer not null, title text, link text, description text, author text, category text, comments text, guid text, enclink text, enclen integer, enctype text, pubdate text, star bool, read bool);

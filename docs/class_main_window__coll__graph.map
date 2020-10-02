@@ -1,5 +1,5 @@
 <map id="MainWindow" name="MainWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="259,260,357,287"/>
+<area shape="rect" id="node1" title="Main thread class holding UI and main logic of the program." alt="" coords="259,260,357,287"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,171,115,197"/>
 <area shape="rect" id="node3" href="$class_items_model.html" title="Simple QSqlTableModel descendant providing data for the items table view." alt="" coords="139,171,229,197"/>
 <area shape="rect" id="node4" title=" " alt="" coords="138,81,259,108"/>

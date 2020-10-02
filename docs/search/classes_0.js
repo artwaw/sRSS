@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['addchannel_165',['addChannel',['../classadd_channel.html',1,'']]]
+  ['addchannel_177',['addChannel',['../classadd_channel.html',1,'']]]
 ];
